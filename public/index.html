@@ -2,18 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>hyperapp-pwa</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+
+    <title>hyperapp-boilerplate</title>
     <meta name="description" content="A minimalist progressive web app compliant template for hyperapp projects">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#ffffff">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="home" href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Android webapp -->
     <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- IOS webapp -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="hyperapp-boilerplate">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/icons/favicon.png">
-    <script defer src="/index.js"></script>
+
+    <!-- Windows webapp -->
+    <meta name="msapplication-TileImage" content="/icons/android-chrome-512x512.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Hyperapp -->
+    <script defer src="/js/app.js"></script>
   </head>
-  <body></body>
+  <body>
+  </body>
   <noscript>Enable JavaScript</noscript>
 </html>
