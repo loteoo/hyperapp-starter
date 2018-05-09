@@ -1,4 +1,7 @@
 # hyperapp-boilerplate
-Personal Hyperapp PWA boilerplate
+> Personal Hyperapp PWA boilerplate
 
-Rollup, JSX, ...
+```
+npm install   // Install dependencies
+npm start     // Serve on hyperapp.localhost:80 and start watcher + live reload
+```

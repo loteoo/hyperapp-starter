@@ -30,8 +30,10 @@ export default {
     dev && livereload('public'),
     dev &&
       serve({
+        open: true,
         contentBase: ['public'],
         historyApiFallback: true,
+        host: 'hyperapp.localhost',
         port: 80,
       }),
   ],
