@@ -1,2 +1,4 @@
 # hyperapp-boilerplate
-Personal Hyperapp boilerplate
+Personal Hyperapp PWA boilerplate
+
+Rollup, JSX, ...
