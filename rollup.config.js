@@ -23,9 +23,9 @@ export default {
     `,
   },
   plugins: [
+    jsx({factory: 'h'}),
     resolve({ jsnext: true }),
     commonjs(),
-    jsx({factory: 'h'})
     prod && uglify(),
     dev && livereload('public'),
     dev &&
