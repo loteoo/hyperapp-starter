@@ -5,8 +5,8 @@ import uglify from 'rollup-plugin-uglify'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 
-const prod = !process.env.ROLLUP_WATCH
-const dev = !!process.env.ROLLUP_WATCH
+const dev = !!process.env.ROLLUP_WATCH  // True if launched via npm start
+const prod = !process.env.ROLLUP_WATCH  // True if launched via npm build
 
 export default {
   input: 'src/main.js',
