@@ -1,9 +1,15 @@
-import jsx from 'rollup-plugin-jsx'
+import buble from 'rollup-plugin-buble'
 import commonjs from 'rollup-plugin-commonjs'
 import resolve from 'rollup-plugin-node-resolve'
 import uglify from 'rollup-plugin-uglify'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
+import postcss from 'rollup-plugin-postcss'
+import nested from 'postcss-nested'
+import cssnext from 'postcss-cssnext'
+import autoprefixer from 'autoprefixer'
+import rucksack from 'rucksack-css'
+import cssnano from 'cssnano'
 
 const dev = !!process.env.ROLLUP_WATCH  // True if launched via npm start
 const prod = !process.env.ROLLUP_WATCH  // True if launched via npm build
@@ -13,17 +19,19 @@ export default {
   output: {
     file: 'public/js/app.js',
     sourcemap: dev ? 'inline' : false,
-    format: 'iife',
-    intro:
-      !dev &&
-      `
-      history.replaceState(null, null, sessionStorage.redirect)
-      delete sessionStorage.redirect
-      if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')
-    `,
+    format: 'iife'
   },
   plugins: [
-    jsx({factory: 'h'}),
+    postcss({
+      plugins: [
+        nested(),
+        cssnext({ warnForDuplicates: false }),
+        autoprefixer(),
+        rucksack(),
+        cssnano()
+      ]
+    }),
+    buble({ jsx: 'h' }),
     resolve({ jsnext: true }),
     commonjs(),
     prod && uglify(),
