@@ -43,6 +43,6 @@ export default {
         historyApiFallback: true,
         host: 'hyperapp.localhost',
         port: 80,
-      }),
-  ],
+      })
+  ]
 }
