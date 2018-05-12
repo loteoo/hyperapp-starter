@@ -28,8 +28,8 @@ export default {
         autoprefixer(),
         rucksack()
       ],
-      minimize: true,
-      sourceMap: 'inline'
+      minimize: prod ? true : false,
+      sourceMap: dev ? 'inline' : false
     }),
     buble({ jsx: 'h' }),
     resolve({ jsnext: true }),
