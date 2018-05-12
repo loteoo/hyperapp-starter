@@ -7,7 +7,6 @@ import livereload from 'rollup-plugin-livereload'
 import postcss from 'rollup-plugin-postcss'
 import nested from 'postcss-nested'
 import cssnext from 'postcss-cssnext'
-import autoprefixer from 'autoprefixer'
 import rucksack from 'rucksack-css'
 
 const dev = !!process.env.ROLLUP_WATCH  // True if launched via npm start
@@ -24,9 +23,8 @@ export default {
     postcss({
       plugins: [
         nested(),
-        cssnext({ warnForDuplicates: false }),
-        rucksack(),
-        autoprefixer()
+        cssnext(),
+        rucksack()
       ],
       minimize: prod ? true : false,
       sourceMap: dev ? 'inline' : false
