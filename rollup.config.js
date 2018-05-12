@@ -9,7 +9,6 @@ import nested from 'postcss-nested'
 import cssnext from 'postcss-cssnext'
 import autoprefixer from 'autoprefixer'
 import rucksack from 'rucksack-css'
-import cssnano from 'cssnano'
 
 const dev = !!process.env.ROLLUP_WATCH  // True if launched via npm start
 const prod = !process.env.ROLLUP_WATCH  // True if launched via npm build
@@ -27,9 +26,10 @@ export default {
         nested(),
         cssnext({ warnForDuplicates: false }),
         autoprefixer(),
-        rucksack(),
-        cssnano()
-      ]
+        rucksack()
+      ],
+      minimize: true,
+      sourceMap: 'inline'
     }),
     buble({ jsx: 'h' }),
     resolve({ jsnext: true }),

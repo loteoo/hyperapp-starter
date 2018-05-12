@@ -10,7 +10,7 @@ In a nutshell:
 
 JS => Hyperapp with JSX, jsnext, live-reload, uglify
 
-CSS => PostCSS => nested, cssnext, autoprefixer, rucksack, cssnano
+CSS => PostCSS => nested, cssnext, autoprefixer, rucksack
 
 Uses Rollup for dev tasks.
 
