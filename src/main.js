@@ -4,6 +4,7 @@ import {state} from './state/'
 import {actions} from './actions/'
 import {view} from './views/'
 
+import 'normalize.css'
 import './style.css'
 
 // Start hyperapp
