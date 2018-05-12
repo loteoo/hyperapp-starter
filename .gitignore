@@ -1,4 +1,3 @@
 node_modules
-public/js/app.js
-public/css/style.css
+public/app.js
 package-lock.json

@@ -16,7 +16,7 @@ const prod = !process.env.ROLLUP_WATCH  // True if launched via npm build
 export default {
   input: 'src/main.js',
   output: {
-    file: 'public/js/app.js',
+    file: 'public/app.js',
     sourcemap: dev ? 'inline' : false,
     format: 'iife'
   },
