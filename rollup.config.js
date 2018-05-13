@@ -6,6 +6,7 @@ import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import postcss from 'rollup-plugin-postcss'
 import nested from 'postcss-nested'
+import focus from 'postcss-focus'
 import cssnext from 'postcss-cssnext'
 import rucksack from 'rucksack-css'
 
@@ -23,6 +24,7 @@ export default {
     postcss({
       plugins: [
         nested(),
+        focus(),
         cssnext(),
         rucksack()
       ],

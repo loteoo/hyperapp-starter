@@ -16,6 +16,7 @@
   "devDependencies": {
     "normalize.css": "^8.0.0",
     "postcss-cssnext": "^3.1.0",
+    "postcss-focus": "^3.0.0",
     "postcss-nested": "^3.0.0",
     "rollup": "^0.58.2",
     "rollup-plugin-buble": "^0.19.2",
