@@ -5,7 +5,7 @@ import {actions} from './actions/'
 import {view} from './views/'
 
 import 'normalize.css'
-import './style.css'
+import './main.css'
 
 // Start hyperapp
 window.main = app(state, actions, view, document.body);
