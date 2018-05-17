@@ -25,8 +25,8 @@ export default {
       plugins: [
         nested(),
         focus(),
-        cssnext(),
-        rucksack()
+        rucksack({ autoprefixer: false }),
+        cssnext({ warnForDuplicates: false })
       ],
       minimize: prod ? true : false,
       sourceMap: dev ? 'inline' : false
