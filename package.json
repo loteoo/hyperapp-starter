@@ -14,6 +14,8 @@
     "hyperapp": "^1.2.5"
   },
   "devDependencies": {
+    "hyperapp-devtools": "^0.3.0",
+    "hyperapp-freeze": "^0.2.0",
     "normalize.css": "^8.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-focus": "^3.0.0",
