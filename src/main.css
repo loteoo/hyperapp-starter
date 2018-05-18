@@ -1,2 +1,57 @@
 /* You can use the latest css has to offer,
 nested selectors and rucksack shortcuts */
+
+/*------------------------------------*\
+    Basic reset / initialize
+\*------------------------------------*/
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------------------*\
+    Global
+\*------------------------------------*/
+
+
+html {
+  font-size: 62.5%;
+
+	--main-color: #333333;
+	--main-background-color: #fafafa;
+	--main-border-color: #e6e6e6;
+	--main-accent-color: #428ce1;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	font-size: responsive;
+	color: var(--main-color);
+	background-color: var(--main-background-color);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+::selection {
+	background: var(--main-accent-color);
+	color: white;
+	text-shadow: none;
+}
+
+/* @font-face {
+  font-family: 'My Font';
+  font-path: '/my/font/file';
+  font-weight: normal;
+  font-style: normal;
+} */
