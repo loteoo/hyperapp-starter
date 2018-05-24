@@ -18,7 +18,7 @@ nested selectors and rucksack shortcuts */
 \*------------------------------------*/
 
 
-html {
+:root {
 	--main-color: #333333;
 	--main-background-color: #fafafa;
 	--main-border-color: #e6e6e6;
