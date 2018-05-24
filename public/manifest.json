@@ -1,6 +1,6 @@
 {
-  "short_name": "hyperapp-boilerplate",
-  "name": "Hyperapp progressive web app template",
+  "short_name": "Hyperapp",
+  "name": "Hyperapp boilerplate",
   "description": "A minimalist progressive web app compliant template for hyperapp projects",
   "display": "fullscreen",
   "scope": "/",
@@ -10,17 +10,21 @@
   "orientation": "portrait",
   "dir": "ltr",
   "lang": "en",
-  "icons": [{
-    "src": "/icons/apple-touch-icon.png",
-    "sizes": "180x180",
-    "type": "image/png"
-  },{
-    "src": "/icons/android-chrome-192x192.png",
-    "sizes": "192x192",
-    "type": "image/png"
-  },{
-    "src": "/icons/android-chrome-512x512.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }]
+  "icons": [
+    {
+      "src": "/icons/icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

@@ -1,5 +1,9 @@
-import {Link, Route, Switch, Redirect, location} from "@hyperapp/router"
+import {location} from "@hyperapp/router"
+import deepmerge from 'deepmerge'
+import {dontMerge} from '../utils/'
 
 export const actions = {
-  location: location.actions
+  location: location.actions,
+  update: fragment => state => deepmerge(state, fragment, {arrayMerge: dontMerge}),
+  set: fragment => fragment
 }
