@@ -1,4 +1,4 @@
-import {location} from "@hyperapp/router"
+import {location} from '@hyperapp/router'
 import deepmerge from 'deepmerge'
 import {dontMerge} from '../utils/'
 
