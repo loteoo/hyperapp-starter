@@ -9,6 +9,4 @@ import './main.css'
 
 // Start hyperapp
 window.main = app(state, actions, view, document.body);
-
-// Activate our router
-const unsubscribe = location.subscribe(main.location);
+window.main.init();
