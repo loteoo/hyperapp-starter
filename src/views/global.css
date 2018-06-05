@@ -35,7 +35,6 @@ body {
   position: relative;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-	font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -48,6 +47,10 @@ a:hover {
 	color: inherit;
 	text-decoration: underline;
 	box-shadow: none;
+}
+
+img {
+	max-width: 100%;
 }
 
 ::selection {
