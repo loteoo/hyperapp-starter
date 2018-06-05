@@ -10,8 +10,8 @@ import focus from 'postcss-focus'
 import cssnext from 'postcss-cssnext'
 import rucksack from 'rucksack-css'
 
-const dev = !!process.env.ROLLUP_WATCH  // True if launched via npm start
-const prod = !process.env.ROLLUP_WATCH  // True if launched via npm run build
+const dev = !!process.env.ROLLUP_WATCH  // If launched via npm start
+const prod = !process.env.ROLLUP_WATCH  // If launched via npm run build
 
 export default {
   input: dev ? 'src/dev.js' : 'src/prod.js',
