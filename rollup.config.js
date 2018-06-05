@@ -20,6 +20,9 @@ export default {
     sourcemap: dev ? 'inline' : false,
     format: 'iife'
   },
+  watch: {
+    chokidar: false
+  },
   plugins: [
     postcss({
       plugins: [
