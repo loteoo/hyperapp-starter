@@ -4,7 +4,6 @@
   "description": "Hyperapp PWA boilerplate",
   "author": "Alexandre Lotte",
   "license": "MIT",
-  "main": "src/main.js",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
@@ -26,7 +25,6 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "devDependencies": {
-    "hyperapp-devtools": "^0.3.0",
     "hyperapp-freeze": "^0.2.0",
     "rollup-plugin-livereload": "^0.6.0",
     "rollup-plugin-serve": "^0.4.2"
