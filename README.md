@@ -3,16 +3,17 @@
 
 ```
 npm install   // Install dependencies
-npm start     // Serve on hyperapp.localhost:80 and start watcher + live reload
+npm start     // Serve
 ```
 
 In a nutshell:
 
-JS => Hyperapp with JSX, jsnext, live-reload, uglify
+Parcel bundler
 
-CSS => PostCSS => normalize, nested, cssnext, autoprefixer, rucksack
 
-Uses Rollup for dev tasks.
+PostCSS => nested, cssnext, autoprefixer, rucksack
+
+
 
 ```
 npm run build   // Build for prod
