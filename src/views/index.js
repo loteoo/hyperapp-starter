@@ -9,6 +9,6 @@ import './global.css'
 // Root view
 export const view = (state, actions) => (
   <main>
-    <h1>sad!</h1>
+    <h1>test!</h1>
   </main>
 )

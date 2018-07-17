@@ -42,6 +42,7 @@ body {
 main {
   h1 {
     color: red;
+    position: absolute 0;
   }
 }
 
