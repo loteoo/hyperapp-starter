@@ -1,10 +1,8 @@
-import {h} from 'hyperapp'
-import {Link, Route, Switch, Redirect, location} from '@hyperapp/router'
+import { h } from 'hyperapp'
 
 // Bundle css for this view
-import 'sanitize.css';
+import 'sanitize.css'
 import './global.css'
-
 
 // Root view
 export const view = (state, actions) => (
