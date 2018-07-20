@@ -1,4 +1,3 @@
-learn + implement hyphen generator
 
 learn + implement typescript
 

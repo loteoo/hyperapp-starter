@@ -8,16 +8,11 @@
     "start": "parcel public/index.html",
     "build": "parcel build ./public/index.html --no-source-maps --experimental-scope-hoisting --detailed-report --public-url ./"
   },
-  "dependencies": {
-    "@hyperapp/router": "^0.7.0",
-    "deepmerge": "^2.1.0",
-    "hyperapp": "^1.2.5",
-    "postcss-nested": "^3.0.0",
-    "rucksack-css": "^1.0.2",
-    "sanitize.css": "^6.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@hyperapp/router": "^0.7.0",
     "autoprefixer": "^9.0.0",
+    "deepmerge": "^2.1.0",
     "eslint": "^5.1.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-standard": "^11.0.0",
@@ -25,6 +20,10 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "postcss-modules": "^1.1.0"
+    "hyperapp": "^1.2.5",
+    "postcss-modules": "^1.1.0",
+    "postcss-nested": "^3.0.0",
+    "rucksack-css": "^1.0.2",
+    "sanitize.css": "^6.0.0"
   }
 }
