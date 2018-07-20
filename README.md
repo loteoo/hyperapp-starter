@@ -22,5 +22,5 @@ npm run build   // Build for prod
 
 Generate components like this:
 ```
-hygen component new --name 'my component'
+.\node_modules\.bin\hygen component new --name 'my component'
 ```
