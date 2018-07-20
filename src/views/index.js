@@ -1,4 +1,4 @@
-import { h } from 'hyperapp'
+import {h} from 'hyperapp'
 
 // Bundle css for this view
 import 'sanitize.css'

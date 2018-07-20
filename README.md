@@ -18,3 +18,9 @@ PostCSS => nested, cssnext, autoprefixer, rucksack
 ```
 npm run build   // Build for prod
 ```
+
+
+Generate components like this:
+```
+hygen component new --name 'my component'
+```
