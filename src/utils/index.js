@@ -1,2 +1,3 @@
+// Utility functions
 
-export const dontMerge = (destination, source) => source
+export const replace = (destination, source) => source

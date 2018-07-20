@@ -7,6 +7,6 @@ import './global.css'
 // Root view
 export const view = (state, actions) => (
   <main>
-    <h1>Parcel + hyperapp FTW!</h1>
+    <h1>Hyperapp!</h1>
   </main>
 )
