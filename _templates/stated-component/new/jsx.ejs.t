@@ -6,23 +6,26 @@ import {h} from 'hyperapp'
 
 import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
 
-const update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({value}) => state => ({
-  ...state,
-  myComponent: {
-    ...state.myComponent,
-    value
-  }
+const update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = fragment => (state, actions) => Object.assign({}, state, {
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: Object.assign({}, state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>, fragment)
 })
 
+const init = {
+  count: 0
+}
 
-const up = () => state => update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: state.myComponent.count + 1})
-const down = () => state => update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: state.myComponent.count - 1})
+const up = (state, actions, {count} = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> || init) => actions.set( // Temp wrapper before 2.0
+  update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: count + 1})(state, actions)
+)
+const down = (state, actions, {count} = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> || init) => actions.set( // Temp wrapper before 2.0
+  update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: count - 1})(state, actions)
+)
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({myComponent}) => (state, actions) => (
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = () => (state, actions, {count} = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> || init) => (
   <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
-    <h2>My new <%= name %> component with namespaced state!</h2>
-    <p>{myComponent.count}</p>
-    <button onclick={up}>UP</button>
-    <button onclick={down}>DOWN<button>
+    <h2><%= name %> component with a namespaced state<br/> within the global state!</h2>
+    <p>{count}</p>
+    <button onclick={() => up(state, actions)}>UP</button>
+    <button onclick={() => down(state, actions)}>DOWN</button>
   </div>
 )
