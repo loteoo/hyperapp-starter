@@ -10,6 +10,5 @@ import {TestTest} from './TestTest/TestTest'
 export const view = (state, actions) => (
   <main>
     <h1>Hyperapp!</h1>
-    <TestTest />
   </main>
 )
