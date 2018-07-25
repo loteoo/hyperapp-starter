@@ -1,13 +1,12 @@
 ---
 to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js
 ---
-
 import {h} from 'hyperapp'
 
 import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
 
 // Namespaced setter action
-const set = fragment => (state, actions) => actions.update({<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: fragment})
+const set = fragment => main.update({<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: fragment})
 
 // Handle form submittion
 const handleSubmit = ev => (state, actions) => {
@@ -20,8 +19,8 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstNam
   <form class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={ev => handleSubmit(ev)(state, actions)}>
     <h2>Form component with namespaced state</h2>
     <p>Full name: {firstName} {lastName}</p>
-    <input type="text" name="firstName" oninput={ev => set({firstName: ev.target.value})(state, actions)} required />
-    <input type="text" name="lastName" oninput={ev => set({lastName: ev.target.value})(state, actions)} required />
+    <input type="text" name="firstName" oninput={ev => set({firstName: ev.target.value})} required />
+    <input type="text" name="lastName" oninput={ev => set({lastName: ev.target.value})} required />
     <button type="submit">Submit</button>
   </form>
 )

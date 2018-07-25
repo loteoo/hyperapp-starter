@@ -2,12 +2,14 @@
 to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js
 ---
 import {h} from 'hyperapp'
+import cc from 'classcat'
 
 import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = () => (
-  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
-    My new <%= name %> stateless component!
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, children, {label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', setter} = props) => (
+  <div class={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
+    <input type={type} name={name} id={name} placeholder={placeholder} oninput={ev => setter({[name]: ev.target.value})} {...props} setter={null} />
+    <label for={name}>{label}</label>
   </div>
 )
 
