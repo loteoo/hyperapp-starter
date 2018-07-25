@@ -11,7 +11,5 @@ export const view = (state, actions) => (
   <main>
     <h1>Hyperapp!</h1>
     <pre>{JSON.stringify(state, null, 2)}</pre>
-    
-    <TestTest {...state.testTest} />
   </main>
 )
