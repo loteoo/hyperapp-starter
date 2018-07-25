@@ -1,7 +1,5 @@
 import {h} from 'hyperapp'
 
-import {TestTest} from './TestTest/TestTest.js'
-
 // Bundle css for this view
 import 'sanitize.css'
 import './global.css'
