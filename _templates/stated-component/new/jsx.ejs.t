@@ -6,19 +6,19 @@ import {h} from 'hyperapp'
 
 import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
 
-const update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = fragment => (state, actions) => actions.set(Object.assign({}, state, {
-  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: Object.assign({}, state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>, fragment)
-}))
+// Namespaced setter action
+const set = fragment => (state, actions) => actions.update({<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: fragment})
+
 
 const init = {
   count: 0
 }
 
 const up = (state, actions, {count} = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> || init) =>
-  update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: count + 1})(state, actions)
+  set({count: count + 1})(state, actions)
 
 const down = (state, actions, {count} = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> || init) =>
-  update<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: count - 1})(state, actions)
+  set({count: count - 1})(state, actions)
 
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = () => (state, actions, {count} = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> || init) => (
   <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
@@ -28,3 +28,7 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = () => (sta
     <button onclick={() => down(state, actions)}>DOWN</button>
   </div>
 )
+
+
+// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js'
+// <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> {...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
