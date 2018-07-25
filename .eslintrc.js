@@ -2,6 +2,7 @@ module.exports = {
     'extends': 'standard',
     'rules': {
       'no-unused-vars': [2, { 'varsIgnorePattern': 'h' }],
-      'object-curly-spacing': [2, 'never']
+      'object-curly-spacing': [2, 'never'],
+      'no-use-before-define': 0
     },
 };
