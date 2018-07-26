@@ -9,7 +9,7 @@ import {h} from 'hyperapp'
 export const view = (state, actions) => (
   <main>
     <h1>Hyperapp!</h1>
-    <p>State: </p>
+    <h4>State: </h4>
     <pre>{JSON.stringify(state, null, 2)}</pre>
   </main>
 )

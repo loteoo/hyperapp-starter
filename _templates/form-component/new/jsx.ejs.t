@@ -18,9 +18,9 @@ const handleSubmit = ev => (state, actions) => {
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstName, lastName}) => (state, actions) => (
   <form class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={ev => handleSubmit(ev)(state, actions)}>
     <h2>Form component with namespaced state</h2>
-    <p>Full name: {firstName} {lastName}</p>
-    <input type="text" name="firstName" oninput={ev => set({firstName: ev.target.value})} required />
-    <input type="text" name="lastName" oninput={ev => set({lastName: ev.target.value})} required />
+    <p>Full name: <b>{firstName} {lastName}</b></p>
+    <input type="text" name="firstName" placeholder="First name" oninput={ev => set({firstName: ev.target.value})} required /><br/>
+    <input type="text" name="lastName" placeholder="Last name" oninput={ev => set({lastName: ev.target.value})} required /><br/>
     <button type="submit">Submit</button>
   </form>
 )
