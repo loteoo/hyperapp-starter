@@ -2,34 +2,22 @@
 nested selectors and rucksack shortcuts */
 
 /*------------------------------------*\
-    Basic reset / initialize
-\*------------------------------------*/
-
-*,
-*:after,
-*:before {
-	box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/*------------------------------------*\
     Global
 \*------------------------------------*/
 
 
 :root {
-	--main-color: #333333;
-	--main-background-color: #fafafa;
-	--main-border-color: #e6e6e6;
-	--main-accent-color: #428ce1;
+	--text-color: #50596c;
+	--background-color: #ffffff;
+	--border-color: #e7e9ed;
+	--accent-color: #5755d9;
 }
 
 body {
 	font-family: 'Arial', sans-serif;
 	font-size: responsive;
-	color: var(--main-color);
-	background-color: var(--main-background-color);
+	color: var(--text-color);
+	background-color: var(--background-color);
   width: 100%;
   height: 100%;
   position: relative;
@@ -37,6 +25,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -55,7 +47,7 @@ img {
 }
 
 ::selection {
-	background: var(--main-accent-color);
+	background: var(--accent-color);
 	color: white;
 	text-shadow: none;
 }
@@ -66,3 +58,5 @@ img {
   font-weight: normal;
   font-style: normal;
 } */
+
+
