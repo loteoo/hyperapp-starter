@@ -16,6 +16,7 @@ to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.infle
   input {
     border: none;
     padding: 0.5rem;
+    margin: 0;
     border-bottom: 1px solid currentColor;
     &:focus {
       background: #f1f1fc;

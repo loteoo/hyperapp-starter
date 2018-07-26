@@ -14,4 +14,4 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, ch
 )
 
 // import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js'
-// <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> label="First name" name="firstName" setter={set} />
+// <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> label="First name" name="firstName" value={firstName} setter={set} />
