@@ -39,6 +39,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+button, input, select, textarea {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
 
 ::selection {
 	background: var(--main-accent-color);

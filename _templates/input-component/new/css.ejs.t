@@ -4,34 +4,41 @@ to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.infle
 .<%= h.inflection.dasherize(name.toLowerCase()) %> {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 1rem;
+  &:first-child {
+    margin-top: 0;
+  }
   label {
     &::after {
       margin-left: 0.5em;
     }
   }
   input {
+    border: none;
+    padding: 0.5rem;
+    border-bottom: 1px solid currentColor;
     &:focus {
-      background-color: rgb(212, 231, 255);
+      background: #f1f1fc;
       & + label {
-        color: blue;
+        color: #5755d9;
         &:after {
           content: "↻";
         }
       }
     }
     &:not(:placeholder-shown):invalid {
-      background-color: rgb(255, 236, 236);
+      background: #fcf1f4;
       & + label {
-        color: red;
+        color: #d95560;
         &:after {
           content: "✗";
         }
       }
     }
-    &:valid {
-      background-color: rgb(218, 255, 240);
+    &:not(:placeholder-shown):valid {
+      background: #f1fcf6;
       & + label {
-        color: rgb(26, 230, 145);
+        color: #55d98c;
         &:after {
           content: "✓";
         }
