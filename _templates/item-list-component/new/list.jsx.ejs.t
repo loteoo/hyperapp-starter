@@ -1,0 +1,34 @@
+---
+to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List.js
+---
+import {h} from 'hyperapp'
+
+import './<%= h.inflection.dasherize(name.toLowerCase()) %>-list.css'
+
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item} from '../<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item.js'
+
+
+const add = () => (state, actions, <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s || []) => main.set({
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s: <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s.concat({
+    title: 'New item',
+    price: 0
+  })
+})
+
+const totalPrice = (total, item) => total + item.price
+
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List = (state, actions, <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s = state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s || []) => (state, actions) => (
+  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>-list" key="<%= h.inflection.dasherize(name.toLowerCase()) %>-list">
+    <p>Component with namespaced state within the global state</p>
+    <div class="list">
+      {
+        <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s.map((item, index) => <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item {...item} index={index} />)
+      }
+    </div>
+    <button onclick={ev => add()(state)}>Add new</button>
+    <p>Total: {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s.reduce(totalPrice, 0)}</p>
+  </div>
+)
+
+// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List} from './<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List.js'
+// <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>List {...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s} />

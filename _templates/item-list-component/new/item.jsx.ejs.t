@@ -1,0 +1,24 @@
+---
+to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item.js
+---
+import {h} from 'hyperapp'
+
+import './<%= h.inflection.dasherize(name.toLowerCase()) %>-item.css'
+
+const set = (index, fragment) => (state) => main.set({
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s: state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s.map((item, i) => i === index ? Object.assign({}, item, fragment) : item)
+})
+
+const remove = (index) => (state) => main.set({
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s: state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>s.filter((item, i) => i !== index)
+})
+
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item = ({title, price, index}) => (state, actions) => (
+  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>-item"  key={`<%= h.inflection.dasherize(name.toLowerCase()) %>-item-${index}`} >
+    <p>{title} {price}</p>
+    <input type="text" value={title} oninput={ev => set(index, {title: ev.target.value})(state)} />
+    <input type="number" value={price} oninput={ev => set(index, {price: parseInt(ev.target.value)})(state)} />
+    <br/>
+    <button onclick={ev => remove(index)(state)}>remove</button>
+  </div>
+)
