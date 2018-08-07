@@ -1,0 +1,7 @@
+popup generator
+
+ajax view (loads into state by id: /resource/:id) generator
+
+button generator (& remove from global css, move to component generators)
+
+ajax autocomplete ID picker generator

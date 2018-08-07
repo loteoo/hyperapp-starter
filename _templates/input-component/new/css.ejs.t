@@ -26,7 +26,7 @@ to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.infle
         }
       }
     }
-    &:not(:placeholder-shown):invalid {
+    &:not(:focus):not(:placeholder-shown):invalid {
       background: #fcf1f4;
       & + label {
         color: #d95560;
@@ -35,7 +35,7 @@ to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.infle
         }
       }
     }
-    &:not(:placeholder-shown):valid {
+    &:not(:focus):not(:placeholder-shown):valid {
       background: #f1fcf6;
       & + label {
         color: #55d98c;
