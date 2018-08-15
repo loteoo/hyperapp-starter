@@ -60,6 +60,11 @@ img {
 	text-shadow: none;
 }
 
+
+svg {
+  fill: none;
+}
+
 /* @font-face {
   font-family: 'My Font';
   font-path: '/my/font/file';
