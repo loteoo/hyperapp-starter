@@ -46,7 +46,7 @@ export const Modal = ({close} = props, children) => (state, actions) => (
 //   state.exampleModalIsOpened
 //     ? (
 //       <Modal close={ev => actions.set({'exampleModalIsOpened': false})}>
-//         <p>Child content within the component</p>
+//         <p>Modal content</p>
 //       </Modal>
 //     )
 //     : null
