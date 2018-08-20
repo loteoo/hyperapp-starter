@@ -109,6 +109,7 @@ coverage
 ############################
 
 dist
+static
 *cache
 
 
