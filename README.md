@@ -128,7 +128,7 @@ https://babeljs.io/
 
 #### CSS 
 PostCSS is ready to go, with nested syntax & rucksack css enhancements.
-An opinionated, 'best practices' css reset is included as well (sanitize.css)
+An opinionated, 'best practices' css reset is included as well [sanitize.css](https://github.com/csstools/sanitize.css)
 
 ex:
 ```
