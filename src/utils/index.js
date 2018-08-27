@@ -1,7 +1,5 @@
 // Utility functions
 
-export const replace = (destination, source) => source
-
 export const generateUUID = () =>
   ('' + 1e7 + -1e3 + -4e3 + -8e3 + -1e11)
     .replace(/1|0/g, function () {
