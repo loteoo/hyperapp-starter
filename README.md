@@ -20,11 +20,12 @@ npm run build   // Build for production
 ## Starter kit for quickly starting Hyperapp projects with a supercharged developer experience.
 
 ES6 + babel stage-3 & PostCSS + rucksackcss via Parcel
-Language details below
+
+[Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
 
 
 
-Proposed project structure (to be changed according to your project's needs)
+*Proposed project structure (to be changed according to your project's needs)*
 
 ```
 ├── _templates/                    # Hygen code generators
@@ -65,9 +66,9 @@ http://www.hygen.io/
 
 
 
-# Syntaxes & language specifications:
+## Syntaxes & language specifications:
 
-## JS 
+#### JS 
 The parcel setup allows for JSX for declaring your views. (recommended)
 Babel stage-3 plugins are enabled.
 Showcase:
@@ -125,7 +126,7 @@ https://babeljs.io/
 
 
 
-## CSS 
+#### CSS 
 PostCSS is ready to go, with nested syntax & rucksack css enhancements.
 An opinionated, 'best practices' css reset is included as well (sanitize.css)
 
@@ -143,7 +144,12 @@ https://www.rucksackcss.org/
 
 
 
+---
+
+
+
 Original repo:
+
 https://github.com/loteoo/hyperapp-boilerplate
 
 
