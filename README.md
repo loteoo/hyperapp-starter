@@ -3,7 +3,7 @@
 
 ```
 # Clone project
-git clone git@github.com:loteoo/hyperapp-boilerplate.git
+git clone https://github.com/loteoo/hyperapp-boilerplate.git
 
 cd hyperapp-boilerplate
 
