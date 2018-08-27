@@ -18,7 +18,8 @@ npm run build   # Build for production
 
 > *Disclaimer:*  
 This is an advanced and opinionated setup.  
-If you're getting started with Hyperapp or JS in general, this might not be for you.
+If you're getting started with Hyperapp or ES6+ JS in general, 
+you can still progressively use it's features.
 
 
 
