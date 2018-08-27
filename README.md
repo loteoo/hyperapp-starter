@@ -23,9 +23,9 @@ you can still progressively use it's features.
 
 
 
-## Supercharged development experience
+## Development on steroids
 
-Babel stage-3 & PostCSS + rucksackcss via Parcel  
+Babel stage-3 & PostCSS + rucksack enhancements via Parcel  
 Code generators included for common use cases
 
 [Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
