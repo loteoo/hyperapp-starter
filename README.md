@@ -16,15 +16,15 @@ npm run build   # Build for production
 ```
 
 
-> Disclaimer:
-This is an advanced and opinionated setup. 
+> *Disclaimer:*  
+This is an advanced and opinionated setup.  
 If you're getting started with Hyperapp or JS in general, this might not be for you.
 
 
 
 ## Supercharged development experience
 
-Babel stage-3 & PostCSS + rucksackcss via Parcel
+Babel stage-3 & PostCSS + rucksackcss via Parcel  
 Code generators included for common use cases
 
 [Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
@@ -74,9 +74,9 @@ http://www.hygen.io/
 
 ## Syntaxes & language specifications:
 
-#### JS 
-The parcel setup allows for JSX for declaring your views. (recommended)
-Babel stage-3 plugins are enabled.
+### JS 
+The parcel setup allows for JSX for declaring your views. (recommended)  
+Babel stage-3 plugins are enabled.  
 Showcase:
 ```
 
@@ -132,7 +132,7 @@ https://babeljs.io/
 
 
 
-#### CSS 
+### CSS 
 PostCSS is ready to go, with nested syntax & rucksack css enhancements.
 An opinionated, 'best practices' css reset is included as well [sanitize.css](https://github.com/csstools/sanitize.css)
 
