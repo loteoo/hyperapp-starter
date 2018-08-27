@@ -1,17 +1,15 @@
-# hyperapp-boilerplate
-> Hyperapp PWA boilerplate
+# Hyperapp boilerplate
+> PWA starter kit with development on steroids
 
 ```
-// Clone project
-git clone git@github.com:loteoo/hyperapp-boilerplate.git
-
+git clone git@github.com:loteoo/hyperapp-boilerplate.git // Clone project
 npm install     // Install dependencies
 npm start       // Dev server + live reload
 npm run build   // Build for production
 ```
 
 
-Disclaimer:
+> Disclaimer:
 This is an advanced and opinionated setup. 
 If you're getting started with Hyperapp or JS in general, this might not be for you.
 
@@ -23,10 +21,10 @@ Language details below
 
 
 
-Proposed project structure (to be changed according to your project's needs)
+Base project structure (to be changed according to your project's needs)
 
 ```
-├── _templates/                    # hygen code generators
+├── _templates/                    # Hygen code generators
 ├── public/                        # Compiled static files (parcel output)
 ├── src/                           # Application source code
 │   ├── actions/                   # Global actions
@@ -57,43 +55,71 @@ Generate new Hyperapp components like this:
 ```
 .\node_modules\.bin\hygen component new --name 'my component'
 ```
+http://www.hygen.io/
 
 
 
 
 
 
-
-# Syntaxes / language specifications:
+# Syntaxes & language specifications:
 
 ## JS 
 The parcel setup allows for JSX for declaring your views. (recommended)
 Babel stage-3 plugins are enabled.
 Showcase:
 ```
-const FooBar = (
+
+// Component
+const FooBarComponent = (
   props,
   children,
+
+  // Props deconstruction while keeping the full object
   {
     items
-    very_long_title: title,
+    very_long_title: title, // Rename an prop
     first_name,
     last_name,
   } = props,
+
+  // Computed variables in function declaration
   total = items.length || 0
   full_name = first_name + last_name
+
+  // View
   ) => (
-  <Component {...props}>
+  <Component {...props}> // JSX spread attribute
     <h2>{title}</h2>
     <p>By: {full_name}</p>
-    <div>
+    <div class="inner">
       {children}
     </div>
     {items.map(item => <Item {...item} />)}
     <p>Total: {total}</p>
   </Component>
 )
+
+
+// Indexed nested setter action
+const actions = {
+  setArticlesData: ({id, article}) => state => ({
+    articlesData: {
+      ...state.articlesData,
+      [id]: article
+    }
+  })
+}
+
+
+// Object rest spread
+let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
+
+
 ```
+https://babeljs.io/
+
+
 
 
 ## CSS 
