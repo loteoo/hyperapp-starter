@@ -147,9 +147,6 @@ https://www.rucksackcss.org/
 ---
 
 
-
-Original repo:
-
 https://github.com/loteoo/hyperapp-boilerplate
 
 
