@@ -5,16 +5,16 @@
   "author": "Alexandre Lotte",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html --out-dir static --open",
-    "build": "parcel build ./src/index.html --no-source-maps --out-dir static --detailed-report --public-url ./"
+    "start": "parcel src/index.html --out-dir public --open",
+    "build": "parcel build ./src/index.html --no-source-maps --out-dir public --detailed-report --public-url ./"
   },
   "devDependencies": {
     "@hyperapp/router": "^0.7.0",
     "autoprefixer": "^9.1.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-stage-3": "^6.24.1",
     "classcat": "^3.1.2",
-    "deepmerge": "^2.1.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-standard": "^11.0.0",
@@ -29,5 +29,8 @@
     "postcss-nested": "^3.0.0",
     "rucksack-css": "^1.0.2",
     "sanitize.css": "^6.0.0"
+  },
+  "dependencies": {
+    "deepmerge": "^2.1.1"
   }
 }
