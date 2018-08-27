@@ -16,10 +16,16 @@ npm run build   # Build for production
 ```
 
 
+> Disclaimer:
+This is an advanced and opinionated setup. 
+If you're getting started with Hyperapp or JS in general, this might not be for you.
 
-## Starter kit for quickly starting Hyperapp projects with a supercharged developer experience.
 
-ES6 + babel stage-3 & PostCSS + rucksackcss via Parcel
+
+## Supercharged development experience
+
+Babel stage-3 & PostCSS + rucksackcss via Parcel
+Code generators included for common use cases
 
 [Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
 
@@ -149,7 +155,3 @@ https://www.rucksackcss.org/
 
 https://github.com/loteoo/hyperapp-boilerplate
 
-
-> Disclaimer:
-This is an advanced and opinionated setup. 
-If you're getting started with Hyperapp or JS in general, this might not be for you.
