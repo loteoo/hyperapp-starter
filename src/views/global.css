@@ -1,15 +1,14 @@
-/* You can use the latest css has to offer,
-nested selectors and rucksack shortcuts */
+/* Nested selectors, rucksack shortcuts & cssnext enabled, go wild! */
 
 /*------------------------------------*\
-    Global
+    Global css
 \*------------------------------------*/
 
 :root {
 	--text-color: #50596c;
 	--background-color: #ffffff;
 	--border-color: #e7e9ed;
-	--accent-color: #5755d9;
+	--accent-color: #5574d9;
 }
 
 html {
@@ -34,24 +33,18 @@ main {
   padding: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 0;
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
 button, input, select, textarea {
   color: inherit;
   margin-top: 1rem;
   padding: 0.5rem;
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 img {
   max-width: 100%;
+}
+
+svg {
+  fill: none;
 }
 
 ::selection {
@@ -59,17 +52,3 @@ img {
 	color: white;
 	text-shadow: none;
 }
-
-
-svg {
-  fill: none;
-}
-
-/* @font-face {
-  font-family: 'My Font';
-  font-path: '/my/font/file';
-  font-weight: normal;
-  font-style: normal;
-} */
-
-

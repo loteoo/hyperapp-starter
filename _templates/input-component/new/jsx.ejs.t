@@ -6,10 +6,10 @@ import cc from 'classcat'
 
 import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, children, {label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', setter} = props) => (
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, children, {label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', required, setter} = props) => (
   <div class={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
-    <input type={type} name={name} id={name} placeholder={placeholder} oninput={ev => setter({[name]: ev.target.value})} {...props} setter={null} />
-    <label for={name}>{label}</label>
+    <input type={type} name={name} id={name} placeholder={placeholder} oninput={ev => setter({[name]: ev.target.value})} required={required} {...props} setter={null} />
+    <label for={name}>{label}{required ? ' *' : null}</label>
   </div>
 )
 
