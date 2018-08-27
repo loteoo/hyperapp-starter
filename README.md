@@ -1,5 +1,5 @@
 # PWA boilerplate
-> Hyperapp starter kit with development on steroids
+*Hyperapp starter kit with development on steroids*
 
 ```
 # Clone project
