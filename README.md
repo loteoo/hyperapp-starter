@@ -74,7 +74,7 @@ Babel stage-3 plugins are enabled.
 Showcase:
 ```
 
-// Component
+// Fictional component
 const FooBarComponent = (
   props,
   children,
