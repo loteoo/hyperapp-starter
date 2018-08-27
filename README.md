@@ -1,17 +1,20 @@
-# Hyperapp boilerplate
-> PWA starter kit with development on steroids
+# PWA boilerplate
+Hyperapp starter kit with development on steroids
 
 ```
-git clone git@github.com:loteoo/hyperapp-boilerplate.git // Clone project
+// Clone project
+git clone git@github.com:loteoo/hyperapp-boilerplate.git
+
+cd hyperapp-boilerplate
+
 npm install     // Install dependencies
 npm start       // Dev server + live reload
+```
+
+```
 npm run build   // Build for production
 ```
 
-
-> Disclaimer:
-This is an advanced and opinionated setup. 
-If you're getting started with Hyperapp or JS in general, this might not be for you.
 
 
 ## Starter kit for quickly starting Hyperapp projects with a supercharged developer experience.
@@ -21,7 +24,7 @@ Language details below
 
 
 
-Base project structure (to be changed according to your project's needs)
+Proposed project structure (to be changed according to your project's needs)
 
 ```
 ├── _templates/                    # Hygen code generators
@@ -139,3 +142,8 @@ ex:
 https://www.rucksackcss.org/
 
 
+
+
+> Disclaimer:
+This is an advanced and opinionated setup. 
+If you're getting started with Hyperapp or JS in general, this might not be for you.
