@@ -41,13 +41,28 @@ export const Modal = ({close} = props, children) => (state, actions) => (
 // Import:
 // import {Modal} from './Modal/Modal.js'
 
+
 // JSX:
+
+// Via state:
 // {
 //   state.exampleModalIsOpened
 //     ? (
-//       <Modal close={ev => actions.set({'exampleModalIsOpened': false})}>
+//       <Modal close={ev => actions.set({exampleModalIsOpened: false})}>
 //         <p>Modal content</p>
 //       </Modal>
 //     )
 //     : null
 // }
+// <button onclick={ev => actions.set({exampleModalIsOpened: true})}>Open modal</button>
+
+// Via Router:
+// <Route 
+//   path='/path-to-modal'
+//   render={
+//     <Modal close={ev => actions.location.go('/')}>
+//       <p>Modal content</p>
+//     </Modal>
+//   }
+// />
+// <Link to='path-to-modal'>Open modal</Link>

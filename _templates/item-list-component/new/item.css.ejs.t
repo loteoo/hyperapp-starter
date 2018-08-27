@@ -6,4 +6,3 @@ to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>Item/<%= h.i
   padding: 1rem;
   border: 1px solid var(--border-color);
 }
- 

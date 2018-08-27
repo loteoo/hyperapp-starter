@@ -16,4 +16,3 @@ to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.infle
     margin: 0.25rem;
   }
 }
- 
