@@ -1,5 +1,5 @@
 # PWA boilerplate
-Hyperapp starter kit with development on steroids
+> Hyperapp starter kit with development on steroids
 
 ```
 // Clone project
@@ -60,7 +60,7 @@ Generate new Hyperapp components like this:
 ```
 http://www.hygen.io/
 
-
+> I also suggest you install hygen globally, it's awesome
 
 
 
@@ -140,6 +140,8 @@ ex:
 }
 ```
 https://www.rucksackcss.org/
+
+
 
 
 
