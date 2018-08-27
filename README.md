@@ -81,14 +81,14 @@ const FooBarComponent = (
 
   // Props deconstruction while keeping the full object
   {
-    items
+    items,
     very_long_title: title, // Rename an prop
     first_name,
     last_name,
   } = props,
 
   // Computed variables in function declaration
-  total = items.length || 0
+  total = items.length || 0,
   full_name = first_name + last_name
 
   // View
