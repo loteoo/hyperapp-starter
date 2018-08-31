@@ -1,10 +1,10 @@
 ---
-to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js
+to: src/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.tsx
 ---
 import {h} from 'hyperapp'
 import cc from 'classcat'
 
-import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
+import './style.css'
 
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, children, {label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', required, setter} = props) => (
   <div class={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
@@ -13,5 +13,5 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, ch
   </div>
 )
 
-// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js'
+// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '@components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.tsx'
 // <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> label="First name" name="firstName" value={firstName} setter={set} />

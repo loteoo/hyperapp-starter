@@ -1,0 +1,15 @@
+---
+to: src/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.tsx
+---
+import {h} from 'hyperapp'
+
+import './style.css'
+
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = () => (
+  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
+    New <%= name %> component!
+  </div>
+)
+
+// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '@components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
+// <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> />

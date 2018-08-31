@@ -50,7 +50,7 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 │   ├── components/                 # Vertically separated components
 │   │   ├── common/                 # Utility components, ex: text input, modal container, etc.
 │   │   ├── pages/                  # Pages are top level components, generally triggered by a router
-│   │   ├── {ComponentName}/        
+│   │   ├── {ComponentName}/        # Advanced component example (sometimes, just a {ComponentName.tsx} file can be enough)
 │   │   │   ├── index.ts
 │   │   │   ├── actions.ts
 │   │   │   ├── view.tsx

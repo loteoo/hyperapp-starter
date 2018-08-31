@@ -1,9 +1,9 @@
 ---
-to: src/views/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js
+to: src/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.tsx
 ---
 import {h} from 'hyperapp'
 
-import './<%= h.inflection.dasherize(name.toLowerCase()) %>.css'
+import './style.css'
 
 // Namespaced setter action
 const set = fragment => main.update({<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: fragment})
@@ -25,5 +25,5 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstNam
   </form>
 )
 
-// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>.js'
+// import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '@components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.tsx'
 // <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> {...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
