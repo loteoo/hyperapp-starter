@@ -14,9 +14,9 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> = {
 
   
   // Handle form submittion
-  handleSubmit = ev => state => {
+  handleSubmit: ev => state => {
     ev.preventDefault();
 
-    alert('Submitted!\nForm state: \n\n' + JSON.stringify(state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>, null, 2));
+    alert('Submitted!\nForm state: \n\n' + JSON.stringify(state, null, 2));
   }
 }

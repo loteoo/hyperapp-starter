@@ -3,4 +3,5 @@ to: src/app/actions.js
 inject: true
 prepend: true
 ---
-import {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>Actions} from '../components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js'
+
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} from '../components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js'

@@ -1,9 +1,7 @@
 ---
 to: src/app/actions.js
 inject: true
-skip_if: <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>
 after: "export const actions = {"
 ---
 
-  // Wire component actions
-  ...<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>Actions,
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,

@@ -2,10 +2,10 @@
 to: src/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js
 ---
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>Actions = {
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> = {
 
   // Nested shallow merge action
-  set<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>: fragment => state => ({
+  set: fragment => state => ({
     <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: {
       ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
       ...fragment
