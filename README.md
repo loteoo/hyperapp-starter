@@ -114,7 +114,7 @@ const FooBarComponent = (
 
 // Example nested & indexed setter action
 const actions = {
-  setArticlesCache: ({id, article}) => state => ({
+  addArticleToCache: ({id, article}) => state => ({
     articlesCache: {
       ...state.articlesData,
       [id]: article
