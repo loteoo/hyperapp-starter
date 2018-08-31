@@ -10,6 +10,18 @@
     "node_modules"
   ],
   "compilerOptions": {
+    "sourceMap": true,
+    "declaration": true,
+    "pretty": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "es2015",
+    "target": "es2015",
     "jsx": "react",
     "jsxFactory": "h",
     "paths": {
