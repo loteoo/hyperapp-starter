@@ -1,5 +1,5 @@
 ---
-to: src/components/Modal/Modal.js
+to: src/components/common/Modal/Modal.js
 ---
 import {h} from 'hyperapp'
 
@@ -38,31 +38,39 @@ export const Modal = ({close} = props, children) => (state, actions) => (
 )
 
 
-// Import:
-// import {Modal} from './Modal/Modal.js'
+/*
+
+// Import
+import {Modal} from './Modal/Modal.js'
 
 
-// JSX:
+// Usage:
 
-// Via state:
-// {
-//   state.exampleModalIsOpened
-//     ? (
-//       <Modal close={ev => actions.set({exampleModalIsOpened: false})}>
-//         <p>Modal content</p>
-//       </Modal>
-//     )
-//     : null
-// }
-// <button onclick={ev => actions.set({exampleModalIsOpened: true})}>Open modal</button>
+// Toggle via state:
 
-// Via Router:
-// <Route 
-//   path='/path-to-modal'
-//   render={
-//     <Modal close={ev => actions.location.go('/')}>
-//       <p>Modal content</p>
-//     </Modal>
-//   }
-// />
-// <Link to='path-to-modal'>Open modal</Link>
+{
+  state.exampleModalIsOpened
+    ? (
+      <Modal close={ev => actions.set({exampleModalIsOpened: false})}>
+        <p>Modal content</p>
+      </Modal>
+    )
+    : null
+}
+<button onclick={ev => actions.set({exampleModalIsOpened: true})}>Open modal</button>
+
+
+
+// Toggle via Router:
+<Route 
+  path='/path-to-modal'
+  render={
+    <Modal close={ev => actions.location.go('/')}>
+      <p>Modal content</p>
+    </Modal>
+  }
+/>
+<Link to='path-to-modal'>Open modal</Link>
+
+
+*/

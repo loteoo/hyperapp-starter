@@ -6,6 +6,7 @@ import './style.css'
 import {h} from 'hyperapp'
 
 
+import {TestComponent} from '../components/TestComponent'
 
 // Root view
 export const view = (state, actions) => (
@@ -14,5 +15,6 @@ export const view = (state, actions) => (
     <h4>State: </h4>
     <pre>{JSON.stringify(state, null, 2)}</pre>
     <button onclick={ev => actions.set({count: (state.count || 0) + 1})}>+</button>
+    <TestComponent />
   </main>
 )

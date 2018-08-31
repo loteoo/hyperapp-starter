@@ -16,7 +16,6 @@
     "strict": true,
     "noImplicitReturns": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
@@ -24,16 +23,6 @@
     "target": "es2015",
     "jsx": "react",
     "jsxFactory": "h",
-    "paths": {
-      "@app/*": [
-        "src/app/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ]
-    },
+    "moduleResolution": "node"
   }
 }
