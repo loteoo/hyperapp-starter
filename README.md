@@ -25,10 +25,10 @@ you can still progressively use it's features.
 
 ## In a nutshell
 
-TypeScript with JSX & ES7 <
-PostCSS with rucksack enhancements
-Code generators included for common use cases
-Uses Parcel for compilation, dev server, watcher with live reload, hot modules...
+TypeScript with JSX & ES7  
+PostCSS with rucksack enhancements  
+Code generators included for common use cases  
+Uses Parcel for compilation, dev server, watcher with live reload, hot modules...  
 
 [Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
 
@@ -78,7 +78,7 @@ http://www.hygen.io/
 ## Syntaxes & language specifications:
 
 ### JS 
-If TypeScript, JSX and ES7 sound alien to you, here's a preview:  
+If TypeScript, JSX or ES7 sound alien to you, here's a preview:  
 ```
 
 // Fictional component
@@ -112,10 +112,10 @@ const FooBarComponent = (
 )
 
 
-// Indexed nested setter action
+// Example nested & indexed setter action
 const actions = {
-  setArticlesData: ({id, article}) => state => ({
-    articlesData: {
+  setArticlesCache: ({id, article}) => state => ({
+    articlesCache: {
       ...state.articlesData,
       [id]: article
     }
@@ -123,12 +123,8 @@ const actions = {
 }
 
 
-// Object rest spread
-let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
-
 
 ```
-https://babeljs.io/
 
 
 
