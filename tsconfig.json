@@ -1,9 +1,27 @@
 {
-  "compilerOptions": {
-    "jsx": "react",
-    "jsxFactory": "h"
-  },
   "include": [
     "src"
-  ]
+  ],
+  "exclude": [
+    "_templates",
+    ".cache",
+    "dist",
+    "public",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h",
+    "paths": {
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ]
+    },
+  }
 }
