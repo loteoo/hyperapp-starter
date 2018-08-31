@@ -1,6 +1,6 @@
 // Bundle css for this view
 import 'sanitize.css'
-import './global.css'
+import './style.css'
 
 // Import dependencies
 import {h} from 'hyperapp'

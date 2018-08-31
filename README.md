@@ -37,24 +37,27 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 *Proposed project structure (to be changed according to your project's needs)*
 
 ```
-├── _templates/                    # Hygen code generators
-├── public/                        # Compiled static files (parcel output)
-├── src/                           # Application source code
-│   ├── actions/                   # Global actions
-│   ├── icons/                     # Application's icons (favicon, touch icon...)
-│   ├── state/                     # Initial app state
-│   ├── utils/                     # Generic utility functions
-│   ├── views/                     # Application views
-│   │   ├── {ComponentName}/           # Vertically separated components
-│   │   │   ├── {ComponentName}.js
-│   │   │   ├── {component-name}.css
+├── _templates/                     # Hygen code generators
+├── public/                         # Compiled static files (parcel output)
+├── src/                            # Application source code
+│   ├── app/                        # Global app files
+│   │   ├── actions.ts              # Global actions
+│   │   ├── app.ts                  # Hyperapp instantiation
+│   │   ├── state.ts                # Initial app state
+│   │   ├── style.css               # Global css
+│   │   ├── utils.ts                # Utility functions
+│   │   ├── view.tsx                # Root view
+│   ├── components/                 # Vertically separated components
+│   │   ├── common/                 # Utility components, ex: text input, modal container, etc.
+│   │   ├── pages/                  # Pages are top level components, generally triggered by a router
+│   │   ├── {ComponentName}/        
+│   │   │   ├── index.ts
+│   │   │   ├── actions.ts
+│   │   │   ├── view.tsx
+│   │   │   ├── style.css
 │   │   │   └── {other}.{svg,png,jpg,gif}
-│   │   ├── common/                # Utility components, ex: text input, modal container, etc.
-│   │   ├── pages/                 # Top level components, generally triggered by a router
-│   │   ├── index.js               # Root view
-│   │   ├── global.css             # Global css
-│   ├── app.js/                    # Hyperapp instantiation
-│   ├── index.html                 # Parcel entry
+│   ├── assets/                     # Global application assets (favicon, twitter card, touch icons, fonts...)
+│   ├── index.html                  # Parcel entry
 │   ├── ...
 ├── ...
 ...
