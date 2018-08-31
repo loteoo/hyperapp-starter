@@ -18,15 +18,17 @@ npm run build   # Build for production
 
 > *Disclaimer:*  
 This is an advanced and opinionated setup.  
-If you're getting started with Hyperapp or ES6+ JS in general, 
+If you're getting started with Hyperapp or JS in general, 
 you can still progressively use it's features.
 
 
 
-## Development on steroids
+## In a nutshell
 
-Babel stage-3 & PostCSS + rucksack enhancements via Parcel  
+TypeScript with JSX & ES7 <
+PostCSS with rucksack enhancements
 Code generators included for common use cases
+Uses Parcel for compilation, dev server, watcher with live reload, hot modules...
 
 [Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
 
@@ -76,9 +78,7 @@ http://www.hygen.io/
 ## Syntaxes & language specifications:
 
 ### JS 
-The parcel setup allows for JSX for declaring your views. (recommended)  
-Babel stage-3 plugins are enabled.  
-Showcase:
+If TypeScript, JSX and ES7 sound alien to you, here's a preview:  
 ```
 
 // Fictional component
@@ -135,7 +135,8 @@ https://babeljs.io/
 
 ### CSS 
 PostCSS is ready to go, with nested syntax & rucksack css enhancements.
-An opinionated, 'best practices' css reset is included as well [sanitize.css](https://github.com/csstools/sanitize.css)
+An opinionated, 'best practices' css reset is loaded in the starterkit as well  
+[sanitize.css](https://github.com/csstools/sanitize.css)
 
 ex:
 ```
