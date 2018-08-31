@@ -41,19 +41,19 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 ├── public/                         # Compiled static files (parcel output)
 ├── src/                            # Application source code
 │   ├── app/                        # Global app files
-│   │   ├── actions.ts              # Global actions
-│   │   ├── app.ts                  # Hyperapp instantiation
-│   │   ├── state.ts                # Initial app state
+│   │   ├── actions.js              # Global actions
+│   │   ├── app.js                  # Hyperapp instantiation
+│   │   ├── state.js                # Initial app state
 │   │   ├── style.css               # Global css
-│   │   ├── utils.ts                # Utility functions
-│   │   ├── view.tsx                # Root view
+│   │   ├── utils.js                # Utility functions
+│   │   ├── view.jsx                # Root view
 │   ├── components/                 # Vertically separated components
 │   │   ├── common/                 # Utility components, ex: text input, modal container, etc.
 │   │   ├── pages/                  # Pages are top level components, generally triggered by a router
 │   │   ├── {ComponentName}/        # Advanced component example (sometimes, just a {ComponentName.tsx} file can be enough)
-│   │   │   ├── index.ts
-│   │   │   ├── actions.ts
-│   │   │   ├── view.tsx
+│   │   │   ├── index.js
+│   │   │   ├── actions.js
+│   │   │   ├── view.jsx
 │   │   │   ├── style.css
 │   │   │   └── {other}.{svg,png,jpg,gif}
 │   ├── assets/                     # Global application assets (favicon, twitter card, touch icons, fonts...)
