@@ -16,5 +16,6 @@ export const view = (state, actions) => (
     <pre>{JSON.stringify(state, null, 2)}</pre>
     <button onclick={ev => actions.set({count: (state.count || 0) + 1})}>+</button>
     <TestComponent />
+    {console.log('RENDERED')}
   </main>
 )

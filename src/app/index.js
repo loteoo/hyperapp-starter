@@ -4,7 +4,5 @@ import {state} from './state'
 import {actions} from './actions'
 import {view} from './view'
 
-window.main = app(state, actions, view, document.body);
-window.main.init();
-
-
+window.main = app(state, actions, view, document.body)
+window.main.init()

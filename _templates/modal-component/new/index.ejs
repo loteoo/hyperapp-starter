@@ -1,9 +1,9 @@
 ---
-to: src/components/common/Modal/Modal.js
+to: src/components/common/Modal/index.jsx
 ---
 import {h} from 'hyperapp'
 
-import './modal.css'
+import './style.css'
 
 // Trigger css slidein transition
 const slideIn = el => {
@@ -41,7 +41,7 @@ export const Modal = ({close} = props, children) => (state, actions) => (
 /*
 
 // Import
-import {Modal} from './Modal/Modal.js'
+import {Modal} from './Modal/index.jsx'
 
 
 // Usage:
