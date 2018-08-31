@@ -4,4 +4,6 @@ inject: true
 skip_if: <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>
 after: "export const actions = {"
 ---
-...<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>Actions,
+
+  // Wire component actions
+  ...<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>Actions,
