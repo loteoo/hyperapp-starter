@@ -1,5 +1,5 @@
 ---
-to: src/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.jsx
+to: src/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>
 ---
 import {h} from 'hyperapp'
 
@@ -26,6 +26,6 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstNam
 )
 
 /*
-import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '../components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.jsx'
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '../components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
 <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> {...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
 */
