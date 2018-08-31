@@ -25,7 +25,7 @@ you can still progressively use it's features.
 
 ## In a nutshell
 
-TypeScript with JSX & ES7  
+ES7 with JSX
 PostCSS with rucksack enhancements  
 Code generators included for common use cases  
 Uses Parcel for compilation, dev server, watcher with live reload, hot modules...  
@@ -81,7 +81,7 @@ http://www.hygen.io/
 ## Syntaxes & language specifications:
 
 ### JS 
-If TypeScript, JSX or ES7 sound alien to you, here's a preview:  
+If JSX or ES5/6/7 sound alien to you, here's a preview:  
 ```
 
 // Fictional component
