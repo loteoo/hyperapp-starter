@@ -1,7 +1,9 @@
+
 import {location} from '@hyperapp/router'
 
 // Global actions for the app
 export const actions = {
+
   // Router actions
   location: location.actions,
 

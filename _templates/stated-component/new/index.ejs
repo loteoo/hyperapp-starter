@@ -9,8 +9,8 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({count = 
   <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
     <p>Component with namespaced state within the global state</p>
     <h2>{count}</h2>
-    <button onclick={ev => actions.set<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: count - 1})}>-</button>
-    <button onclick={ev => actions.set<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>({count: count + 1})}>+</button>
+    <button onclick={ev => actions.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.set({count: count - 1})}>-</button>
+    <button onclick={ev => actions.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.set({count: count + 1})}>+</button>
   </div>
 )
 
