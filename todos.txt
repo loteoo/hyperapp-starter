@@ -1,4 +1,3 @@
-document & pimp service worker
 
 ajax view generator (loads into state by id: /resource/:id)
 
