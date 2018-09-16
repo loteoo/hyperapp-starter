@@ -119,7 +119,7 @@ const FooBarComponent = (
 const actions = {
   addArticleToCache: ({id, article}) => state => ({
     articlesCache: {
-      ...state.articlesData,
+      ...state.articlesCache,
       [id]: article
     }
   })
