@@ -26,8 +26,8 @@ const Close = ({close}) => (
 )
 
 // Exported component
-export const Modal = ({close} = props, children) => (state, actions) => (
-  <div class="modal" key="modal" onclick={close} oncreate={slideIn} onremove={slideOut}>
+export const Modal = ({close, ...rest}, children) => (state, actions) => (
+  <div class="modal" key="modal" onclick={close} oncreate={slideIn} onremove={slideOut} {...rest}>
     <div class="box" onclick={ev => ev.stopPropagation()}>
       <Close close={close} />
       <div class="inner">
@@ -41,7 +41,7 @@ export const Modal = ({close} = props, children) => (state, actions) => (
 /*
 
 // Import
-import {Modal} from './Modal'
+import {Modal} from '../components/common/Modal'
 
 
 // Usage:

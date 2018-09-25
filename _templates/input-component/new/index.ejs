@@ -1,19 +1,20 @@
 ---
-to: src/components/common/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>
+to: src/components/common/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.jsx
 ---
 import {h} from 'hyperapp'
 import cc from 'classcat'
 
 import './style.css'
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, children, {label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', required, setter} = props) => (
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', required, hint, setter, ...rest}) => (
   <div class={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
-    <input type={type} name={name} id={name} placeholder={placeholder} oninput={ev => setter({[name]: ev.target.value})} required={required} {...props} setter={null} />
+    <input type={type} name={name} id={name} placeholder={placeholder} required={required} oninput={setter ? ev => setter({[name]: ev.target.value}) : null} {...rest} />
     <label for={name}>{label}{required ? ' *' : null}</label>
+    {hint ? <p class="hint">{hint}</p> : null}
   </div>
 )
 
 /*
-import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '../components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from '../components/common/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
 <<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> label="First name" name="firstName" value={firstName} setter={set} />
 */
