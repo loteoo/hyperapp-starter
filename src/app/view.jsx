@@ -3,10 +3,10 @@ import 'sanitize.css'
 import './style.css'
 
 // Import dependencies
-import {h} from 'hyperapp'
+import {h} from '../lib/hyperappv2.js'
 
 // Root view
-export const view = (state, actions) => (
+export const view = state => (
   <main>
     <h1>Hyperapp!</h1>
     <h4>State: </h4>

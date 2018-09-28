@@ -6,3 +6,10 @@ export const generateUUID = () =>
       return (0 | Math.random() * 16)
         .toString(16)
     })
+
+
+export const getStateFromStorage = () =>
+  JSON.parse(window.localStorage.getItem('hyperapp-boilerplate'))
+
+export const storeStateInStorage = (state) =>
+  window.localStorage.setItem('hyperapp-boilerplate', JSON.stringify(state))
