@@ -133,7 +133,7 @@ const setCacheItem (state, item) => ({
 
 // Converts an array of objects with ids to 
 // a key-value map of each objects by their ids 
-// and an array of ids only
+// and also creates an array with the ids only
 const setItems: (state, items) => ({
   ...state,
   itemsIds: items.map(item => item.id),
