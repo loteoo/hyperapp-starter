@@ -1,4 +1,4 @@
-# PWA boilerplate
+# Hyperapp 2.0 PWA/SPA boilerplate
 *Hyperapp starter kit with development on steroids*
 
 ```
@@ -50,7 +50,7 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 │   ├── components/                 # Vertically separated components
 │   │   ├── common/                 # Utility components, ex: text input, modal container, etc.
 │   │   ├── pages/                  # Pages are top level components, generally triggered by a router
-│   │   ├── {ComponentName}/        # Advanced component example (sometimes, just a {ComponentName.jsx} file can be enough)
+│   │   ├── {ComponentName}/        # Advanced component example (sometimes, just a {ComponentName.jsx} file is enough)
 │   │   │   ├── index.js
 │   │   │   ├── actions.js
 │   │   │   ├── view.jsx
@@ -85,27 +85,25 @@ If JSX or ES5/6/7 sound alien to you, here's a preview:
 ```
 
 // Fictional component
-const FooBarComponent = (
-  props,
+const FooBarComponent = ({
+    items,
+    veryLongTitle: title, // Rename props
+    firstName,
+    lastName,
+    ...rest
+  },
+
   children,
 
-  // Props deconstruction while keeping the full object
-  {
-    items,
-    very_long_title: title, // Rename an prop
-    first_name,
-    last_name,
-  } = props,
-
   // Computed variables in function declaration
-  total = items.length || 0,
-  full_name = first_name + last_name
+  total = items ? items.length : 0,
+  fullName = firstName + lastName
 
   // View
   ) => (
-  <Component {...props}> // JSX spread attribute
+  <Component {...rest}>
     <h2>{title}</h2>
-    <p>By: {full_name}</p>
+    <p>By: {fullName}</p>
     <div class="inner">
       {children}
     </div>
@@ -116,14 +114,23 @@ const FooBarComponent = (
 
 
 // Example nested & indexed setter action
-const actions = {
-  addArticleToCache: ({id, article}) => state => ({
-    articleCache: {
-      ...state.articleCache,
-      [id]: article
-    }
-  })
-}
+const setCacheItem (state, item) => ({
+  itemCache: {
+    ...state.itemCache,
+    [id]: item
+  }
+}),
+
+
+
+// Converts an array of objects with ids to 
+// a key-value map of each objects by their ids 
+// and an array of ids only
+const setItems: (state, items) => ({
+  ...state,
+  itemsIds: items.map(item => item.id),
+  itemCache: items.reduce((cache, item) => ({...cache, [item.id]: item.value}), state.itemCache || {})
+}),
 
 
 
@@ -151,7 +158,23 @@ https://www.rucksackcss.org/
 
 
 
----
+
+
+
+## Hyperapp 2.0 TLDR:
+
+State => Data of your app  
+View => Maps a given state to a vDOM  
+Actions => Takes in a state, some params, returns a new state  
+Subscribtions => Trigger actions from the outside  
+Effects => Interact with the outside world  
+
+Use functional programming to describe an application 
+and let Hyperapp bring it to life
+
+https://github.com/jorgebucaran/hyperapp/pull/726
+
+---  
 
 
 https://github.com/loteoo/hyperapp-boilerplate
