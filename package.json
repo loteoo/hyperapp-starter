@@ -9,7 +9,6 @@
     "build": "env NODE_ENV=production parcel build ./src/index.html --no-source-maps --out-dir public --detailed-report"
   },
   "devDependencies": {
-    "@hyperapp/router": "^0.7.0",
     "autoprefixer": "^9.1.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "classcat": "^3.1.2",

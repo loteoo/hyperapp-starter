@@ -5,15 +5,15 @@
 \*------------------------------------*/
 
 :root {
-	--text-color: #50596c;
+	--text-color: #525f7f;
 	--background-color: #ffffff;
-	--border-color: #e7e9ed;
-	--accent-color: #5574d9;
+	--accent-color: #6772e5;
 }
 
 html {
-  font-family: 'Arial', sans-serif;
-  font-size: responsive;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: responsive 14px 18px;
+  font-range: 420px 1280px;
   color: var(--text-color);
   background-color: var(--background-color);
   text-rendering: optimizeLegibility;
@@ -23,8 +23,6 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
   position: relative;
   overflow-x: hidden;
 }
@@ -37,6 +35,10 @@ button, input, select, textarea {
   color: inherit;
   margin-top: 1rem;
   padding: 0.5rem;
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 img {
@@ -49,6 +51,5 @@ svg {
 
 ::selection {
 	background: var(--accent-color);
-	color: white;
-	text-shadow: none;
+	color: var(--background-color);
 }

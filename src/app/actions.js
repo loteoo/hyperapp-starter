@@ -1,11 +1,17 @@
-// Global actions for the app
+// ==================
+// Global actions 
+// ==================
+
 import {generateUUID} from './utils'
 
+// Sets the new item input value in the state
 export const setInputValue = (state, ev) => ({
   ...state,
   inputValue: ev.target.value
 })
 
+// Adds a new item in the array
+// and resets the input.
 export const addItem = (state) => ({
   inputValue: '',
   items: state.items.concat({
@@ -15,6 +21,7 @@ export const addItem = (state) => ({
   })
 })
 
+// Updates the "value" attribute of an item by ID
 export const updateItem = (state, id, ev) => ({
   ...state,
   items:  state.items.map(item => 
@@ -24,6 +31,7 @@ export const updateItem = (state, id, ev) => ({
   )
 })
 
+// Inverts the "done" attribute of an item by ID
 export const toggleItem = (state, id) => ({
   ...state,
   items:  state.items.map(item => 
@@ -33,6 +41,7 @@ export const toggleItem = (state, id) => ({
   )
 })
 
+// Removes an item in the array by ID
 export const deleteItem = (state, id) => ({
   ...state,
   items: state.items.filter(item => id !== item.id)
