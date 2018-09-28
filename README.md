@@ -84,7 +84,8 @@ http://www.hygen.io/
 If JSX or ES5/6/7 sound alien to you, here's a preview:  
 ```
 
-// Fictional component
+// Example component
+
 const FooBarComponent = ({
     items,
     veryLongTitle: title, // Rename props
@@ -113,15 +114,22 @@ const FooBarComponent = ({
 )
 
 
-// Example nested & indexed setter action
+// Example actions:
+
+// Sets a value in the state from an input
+export const setInputValue = (state, ev) => ({
+  ...state,
+  inputValue: ev.target.value
+})
+
+// Update an item by it's key in a key-value map
 const setCacheItem (state, item) => ({
+  ...state,
   itemCache: {
     ...state.itemCache,
     [id]: item
   }
-}),
-
-
+})
 
 // Converts an array of objects with ids to 
 // a key-value map of each objects by their ids 
@@ -129,8 +137,8 @@ const setCacheItem (state, item) => ({
 const setItems: (state, items) => ({
   ...state,
   itemsIds: items.map(item => item.id),
-  itemCache: items.reduce((cache, item) => ({...cache, [item.id]: item.value}), state.itemCache || {})
-}),
+  itemCache: items.reduce((cache, item) => ({...cache, [item.id]: item.value}), state.itemCache)
+})
 
 
 
