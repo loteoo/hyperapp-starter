@@ -17,6 +17,7 @@
 	--background-color: #ffffff;
 	--alt-background-color: #f7f7f7;
   --accent-color: #6C63FF;
+  --alt-accent-color: #4641FF;
   --border-color: #eee;
 
   --success-color: #06d19c;
@@ -120,9 +121,10 @@ button {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
   font-weight: 400;
+  line-height: 1.7;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   margin-bottom: 1.3em;
   text-align: center;
   text-decoration: none; 
@@ -182,7 +184,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   font-family: inherit;
   font-weight: inherit;
   padding: 10pt 20pt;
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   background-color: var(alt-background-color);
   margin-bottom: 1.4em;
   display: block;
@@ -197,12 +199,11 @@ textarea {
   appearance: none;
   border: 1px solid var(--border-color);
   width: 100%;
-  transition: 0.7s;
   color: #111;
   font-family: inherit;
   font-weight: inherit;
   padding: 12pt 24pt;
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   background-color: var(alt-background-color);
   margin-bottom: 1.4em;
   display: block;
@@ -219,14 +220,13 @@ textarea {
 select {
   border: 1px solid var(--border-color);
   width: 100%;
-  transition: 0.7s;
   color: #111;
   font-family: inherit;
   font-weight: inherit;
   padding: 10pt 20pt;
   margin-bottom: 1.4em;
   display: block;
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   background-color: var(alt-background-color);
   outline: 0;
   appearance: none;
@@ -432,6 +432,13 @@ select {
   max-width: 640px;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  > .col {
+    flex: 1;
+  }
+}
 
 
 
