@@ -112,6 +112,7 @@ pre {
   width: 100%;
   overflow: auto;
   border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
 }
 
 a {
@@ -130,7 +131,7 @@ button {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 1.5rem;
-  margin-bottom: 1.3em;
+  margin-bottom: 1rem;
   text-align: center;
   text-decoration: none; 
   cursor: pointer;
@@ -142,6 +143,10 @@ button {
     opacity: 0.25;
     cursor: default;
     pointer-events: none;
+  }
+  &[pill] {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   &[primary] {
     background-color: var(--accent-color);
@@ -191,7 +196,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   padding: 10pt 20pt;
   border-radius: 1.5rem;
   background-color: var(--alt-background-color);
-  margin-bottom: 1.4em;
+  margin-bottom: 1rem;
   display: block;
   &:focus {
     border-color: rgba(108, 99, 255, 0.5);
@@ -210,7 +215,7 @@ textarea {
   padding: 12pt 24pt;
   border-radius: 1.5rem;
   background-color: var(alt-background-color);
-  margin-bottom: 1.4em;
+  margin-bottom: 1rem;
   display: block;
   resize: none;
   min-height: 8em;
@@ -441,6 +446,9 @@ select {
   justify-content: space-between;
   > .col {
     flex: 1;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 }
 

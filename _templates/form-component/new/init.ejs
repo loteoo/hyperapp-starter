@@ -1,0 +1,7 @@
+---
+to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/init.js
+---
+// Initial state of the component (local state)
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> = {
+  submitted: false
+}

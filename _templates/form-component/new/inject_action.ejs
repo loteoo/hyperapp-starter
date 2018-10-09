@@ -1,8 +1,0 @@
----
-to: src/app/actions.js
-inject: true
-after: "export const actions = {"
-skip_if: <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>
----
-
-  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,

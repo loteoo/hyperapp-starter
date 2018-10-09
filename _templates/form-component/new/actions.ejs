@@ -2,18 +2,21 @@
 to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js
 ---
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %> = {
+export const nestedSetter = (state, nestedState) => ({
+  ...state,
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: nestedState
+})
 
-  // Nested shallow merge action
-  set: fragment => state => ({
-    ...fragment
-  }),
+export const SetValue = (state, key, ev) => nestedSetter(state, {
+  ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+  [key]: ev.target.value
+})
 
-  
-  // Handle form submittion
-  handleSubmit: ev => state => {
-    ev.preventDefault();
-
-    alert('Submitted!\nForm state: \n\n' + JSON.stringify(state, null, 2));
-  }
+export const SubmitForm = (state, ev) => {
+  ev.preventDefault();
+  alert('Submitted!\nForm state: \n\n' + JSON.stringify(state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>, null, 2));
+  return nestedSetter(state, {
+    ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+    submitted: true
+  })
 }

@@ -1,11 +1,9 @@
+CRUD list generator
 
-ajax view generator (loads into state by id: /resource/:id)
+ajax REST API view generator (loads into state by id: /resource/:id)
 
 button generator (<Link> or action <button> or <a href> & remove from global css, move to component generators)
 
+Radio & checkbox input generator
+
 ajax autocomplete ID picker generator
-
-
-2.0:
-new project structure
-fix generators actions

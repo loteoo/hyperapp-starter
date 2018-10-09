@@ -3,15 +3,24 @@ to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/in
 ---
 import {h} from 'hyperapp'
 
+// Import local actions
+import {SetValue, SubmitForm} from './actions'
+
 import './style.css'
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstName, lastName}) => (state, actions) => (
-  <form class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={actions.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.handleSubmit}>
-    <h2>Form component with namespaced state</h2>
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstName, lastName, submitted}) => (
+  <form class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={SubmitForm}>
+    <h3>Form component with namespaced state</h3>
     <p>Full name: <b>{firstName} {lastName}</b></p>
-    <input type="text" name="firstName" placeholder="First name" value={firstName} oninput={ev => actions.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.set({firstName: ev.target.value})} required /><br/>
-    <input type="text" name="lastName" placeholder="Last name" value={lastName} oninput={ev => actions.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.set({lastName: ev.target.value})} required /><br/>
-    <button type="submit">Submit</button>
+    <div className="row">
+      <div className="col">
+        <input type="text" id="firstName" name="firstName" placeholder="First name" value={firstName} oninput={[SetValue, 'firstName']} required />
+      </div>
+      <div className="col">
+        <input type="text" name="lastName" placeholder="Last name" value={lastName} oninput={[SetValue, 'lastName']} required />
+      </div>
+    </div>
+    {!submitted ? <button type="submit" pill>Submit</button> : <span>Submitted!</span>}
   </form>
 )
 

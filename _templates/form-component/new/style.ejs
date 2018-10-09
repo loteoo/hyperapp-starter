@@ -2,8 +2,16 @@
 to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/style.css
 ---
 .<%= h.inflection.dasherize(name.toLowerCase()) %> {
-  max-width: 24rem;
+  max-width: 32rem;
   margin: 1rem 0;
   padding: 1rem;
   border: 1px solid var(--border-color);
+  border-radius: 0.2rem;
+  text-align: center;
+  >p {
+    text-align: left;
+  }
+  >button {
+    margin: 0.25rem;
+  }
 }
