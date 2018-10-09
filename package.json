@@ -13,7 +13,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "classcat": "^3.1.2",
     "hygen": "^1.6.2",
-    "hyperapp": "^1.2.8",
+    "hyperapp": "github:jorgebucaran/hyperapp#V2",
     "parcel-bundler": "^1.9.7",
     "postcss-modules": "^1.3.2",
     "postcss-nested": "^3.0.0",

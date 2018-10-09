@@ -2,7 +2,7 @@
 import 'sanitize.css'
 import './style.css'
 
-import {h} from '../../hyperapp.js'
+import {h} from 'hyperapp'
 
 // Import actions
 import {setInputValue} from './actions'
