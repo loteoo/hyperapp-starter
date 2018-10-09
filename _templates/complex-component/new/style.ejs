@@ -3,7 +3,7 @@ to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/st
 ---
 .<%= h.inflection.dasherize(name.toLowerCase()) %> {
   max-width: 24rem;
-  margin: 1rem auto;
+  margin: 1rem 0;
   padding: 1rem;
   border: 1px solid var(--border-color);
   text-align: center;
@@ -11,8 +11,6 @@ to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/st
     text-align: left;
   }
   >button {
-    width: 2rem;
-    height: 2rem;
     margin: 0.25rem;
   }
 }

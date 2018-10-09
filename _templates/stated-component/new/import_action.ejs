@@ -1,8 +1,0 @@
----
-to: src/app/actions.js
-inject: true
-prepend: true
-skip_if: import {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>}
----
-
-import {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} from '../components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js'

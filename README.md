@@ -17,18 +17,21 @@ npm run build   # Build for production
 
 
 > *Disclaimer:*  
-This is an opinionated and advanced setup.  
-If you're getting started with Hyperapp or JS in general, 
-you can still progressively use it's features.
+This is an opinionated setup fine tuned to how 
+I personally build webapps with hyperapp.  
+If you're getting started with Hyperapp or with 
+JS in general, you progressively use it's features 
+as you learn and stick with what you know.
 
 
-
+ 
 ## In a nutshell
 
 ES7 with JSX  
 PostCSS with rucksack enhancements  
 Code generators included for common use cases  
 Uses Parcel for compilation, dev server, watcher with live reload, hot modules...  
+
 
 [Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
 
@@ -78,92 +81,17 @@ http://www.hygen.io/
 
 
 
-## Syntaxes & language specifications:
-
-### JS 
-If JSX or ES5/6/7 sound alien to you, here's a preview:  
-```
-
-// Example component
-
-const FooBarComponent = ({
-    items,
-    veryLongTitle: title, // Rename props
-    firstName,
-    lastName,
-    ...rest
-  },
-
-  children,
-
-  // Computed variables in function declaration
-  total = items ? items.length : 0,
-  fullName = firstName + lastName
-
-  // View
-  ) => (
-  <Component {...rest}>
-    <h2>{title}</h2>
-    <p>By: {fullName}</p>
-    <div class="inner">
-      {children}
-    </div>
-    {items.map(item => <Item {...item} />)}
-    <p>Total: {total}</p>
-  </Component>
-)
-
-
-// Example actions:
-
-// Sets a value in the state from an input
-export const setInputValue = (state, ev) => ({
-  ...state,
-  inputValue: ev.target.value
-})
-
-// Update an item by it's key in a key-value map
-const setCacheItem (state, item) => ({
-  ...state,
-  itemCache: {
-    ...state.itemCache,
-    [id]: item
-  }
-})
-
-// Converts an array of objects with ids to 
-// a key-value map of each objects by their ids 
-// and also creates an array with the ids only
-const setItems: (state, items) => ({
-  ...state,
-  itemsIds: items.map(item => item.id),
-  itemCache: items.reduce((cache, item) => ({...cache, [item.id]: item.value}), state.itemCache)
-})
-
-
-
-```
-
 
 
 
 ### CSS 
 PostCSS is ready to go, with nested syntax & rucksack css enhancements.
+https://www.rucksackcss.org/
+
 An opinionated, 'best practices' css reset is loaded in the starterkit as well  
 [sanitize.css](https://github.com/csstools/sanitize.css)
 
-ex:
-```
-.container {
-  font-size: responsive;
-  position: relative;
-  > .inner {
-    position: absolute 0;
-  }
-}
-```
-https://www.rucksackcss.org/
-
+A starter "theme" is also pre-written for you to edit.
 
 
 
@@ -172,7 +100,7 @@ https://www.rucksackcss.org/
 ## Hyperapp 2.0 TLDR:
 
 State => Data of your app  
-View => Maps a given state to a vDOM  
+View => Maps a given state to vDOM, which Hyperapp will use to update the DOM  
 Actions => Takes in a state, some params, returns a new state  
 Subscribtions => Trigger actions from the outside  
 Effects => Interact with the outside world  

@@ -1,0 +1,23 @@
+---
+to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.jsx
+---
+import {h} from 'hyperapp'
+
+// Import local actions
+import {Up, Down} from './actions'
+
+import './style.css'
+
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({count = count || 0}) => (
+  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
+    <p>Component with namespaced state within the global state</p>
+    <h2>{count}</h2>
+    <button onclick={[Down]}>-</button>
+    <button onclick={[Up]}>+</button>
+  </div>
+)
+
+/*
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
+<<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> {...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
+*/
