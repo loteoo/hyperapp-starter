@@ -34,30 +34,30 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 
 
 
-*Proposed project structure (to be changed according to your project's needs)*
+*Proposed folder structure as your project grows*
 
 ```
-├── _templates/                     # Hygen code generators
-├── public/                         # Compiled static files (parcel output)
-├── src/                            # Application source code
-│   ├── app/                        # Global app files
-│   │   ├── actions.js              # Global actions
-│   │   ├── app.js                  # Hyperapp instantiation
-│   │   ├── state.js                # Initial app state
-│   │   ├── style.css               # Global css
-│   │   ├── utils.js                # Utility functions
-│   │   ├── view.jsx                # Root view
-│   ├── components/                 # Vertically separated components
-│   │   ├── common/                 # Utility components, ex: text input, modal container, etc.
-│   │   ├── pages/                  # Pages are top level components, generally triggered by a router
-│   │   ├── {ComponentName}/        # Advanced component example (sometimes, just a {ComponentName.jsx} file is enough)
-│   │   │   ├── index.js
-│   │   │   ├── actions.js
-│   │   │   ├── view.jsx
-│   │   │   ├── style.css
-│   │   │   └── {other}.{svg,png,jpg,gif}
-│   ├── assets/                     # Global application assets (favicon, twitter card, touch icons, fonts...)
-│   ├── index.html                  # Parcel entry
+├── _templates/                       # Hygen code generators
+├── public/                           # Compiled static files (parcel output)
+├── src/                              # Application source code
+│   ├── app/                          # Global app files
+│   │   ├── components/               # Vertically separated components
+│   │   │   ├── common/               # Utility components, ex: text input, modal container, etc.
+│   │   │   ├── pages/                # Pages are top level components, generally triggered by a router
+│   │   │   ├── {ComponentName}/      # Advanced component with multiple files
+│   │   │   │   ├── index.jsx
+│   │   │   │   ├── actions.js
+│   │   │   │   ├── style.css
+│   │   │   │   └── other.png
+│   │   │   └── {ComponentName}.jsx   # Simple component
+│   │   ├── actions.js                # Global actions
+│   │   ├── index.js                  # Hyperapp instantiation
+│   │   ├── init.js                   # Initial app state
+│   │   ├── style.css                 # Global css
+│   │   ├── utils.js                  # Utility functions
+│   │   └── view.jsx                  # Root view
+│   ├── assets/                       # Global application assets (favicon, fonts...)
+│   ├── index.html                    # Parcel entry
 │   ├── ...
 ├── ...
 ...
