@@ -9,7 +9,7 @@ import {SetValue, SubmitForm} from './actions'
 import './style.css'
 
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstName, lastName, submitted}) => (
-  <form class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={SubmitForm}>
+  <form className="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={SubmitForm}>
     <h3>Form component with namespaced state</h3>
     <p>Full name: <b>{firstName} {lastName}</b></p>
     <input type="text" id="firstName" name="firstName" placeholder="First name" value={firstName} oninput={[SetValue, 'firstName']} required />

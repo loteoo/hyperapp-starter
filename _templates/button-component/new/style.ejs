@@ -1,0 +1,21 @@
+---
+to: src/app/components/common/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/style.css
+---
+.<%= h.inflection.dasherize(name.toLowerCase()) %> {
+  &[pill] {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  &[primary] {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  &[accent] {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+  }
+  &[warning] {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+}

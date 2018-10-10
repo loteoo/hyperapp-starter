@@ -50,14 +50,13 @@ body {
   overflow-x: hidden;
 }
 
-
-
-/* === Default styles === */
-
 ::selection {
 	background: var(--accent-color);
 	color: var(--background-color);
 }
+
+
+/* === Default styles === */
 
 p {
   margin-bottom: 1.3em;
@@ -144,22 +143,6 @@ button {
     cursor: default;
     pointer-events: none;
   }
-  &[pill] {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-  &[primary] {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-  }
-  &[accent] {
-    background-color: var(--success-color);
-    border-color: var(--success-color);
-  }
-  &[warning] {
-    background-color: var(--danger-color);
-    border-color: var(--danger-color);
-  }
 }
 
 img {
@@ -170,12 +153,6 @@ svg {
   fill: none;
   max-width: 100%;
 }
-
-
-form {
-  margin-bottom: 1.5em;
-}
-
 
 label {
   margin-bottom: 2pt;
@@ -269,158 +246,6 @@ select {
   opacity: .65;
   color: inherit;
 }
-
-/* Remove default Radio Buttons */
-[type="radio"] {
-  position: absolute;
-  left: -9999px;
-  visibility: hidden;
-  transition: 200ms ease;
-  & + label {
-    position: relative;
-    padding-left: 2em;
-    cursor: pointer;
-    display: inline-block;
-    height: 1.7em;
-    line-height: 1.7em;
-    transition: 200ms ease;
-    user-select: none;
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin: 3px;
-      width: 1.2em;
-      height: 1.2em;
-      z-index: 0;
-      transition: 200ms ease;
-    }
-  }
-
-  /* Unchecked styles */
-  &:not(:checked) {
-    & + label::before {
-      transition: 200ms ease;
-      border-radius: 50%;
-      border: 1px solid currentColor;
-    }
-    & + label::after {
-      transition: 200ms ease;
-      border-radius: 50%;
-      border: 1px solid currentColor;
-      z-index: -1;
-      transform: scale(0);
-    }
-  }
-
-  /* Checked styles */
-  &:checked {
-    & + label::before {
-      border-radius: 50%;
-      border: 1px solid transparent;
-    }
-    & + label::after {
-      border-radius: 50%;
-      border: 1px solid var(--accent-color);
-      background-color: var(--accent-color);
-      z-index: 0;
-      transform: scale(1.02);
-    }
-  }
-
-  /* Disabled style */
-  &:disabled {
-    & + label {
-      color: var(--border-color);
-      cursor: default;
-      &::before {
-        background-color: transparent;
-        border-color: var(--border-color);
-        cursor: default;
-      }
-    }
-    
-    &:not(:checked) {
-      & + label {
-        &::before {
-          border-color: var(--border-color);
-        }
-      }
-    }
-    &:checked {
-      & + label {
-        &::after {
-          background-color: var(--border-color);
-          border-color: currentColor;
-        }
-      }
-    }
-  }
-}
-
-
-
-[type="checkbox"] {
-  &:not(:checked),
-  &:checked {
-    position: absolute;
-    left: -9999px;
-    visibility: hidden;
-  }
-  
-  & + label {
-    position: relative;
-    padding-left: 2em;
-    cursor: pointer;
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
-    font-size: 0.9em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -ms-user-select: none;
-  }
-  & + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 3px;
-    width: 15px;
-    height: 15px;
-    z-index: 0;
-    border: 1px solid currentColor;
-    border-radius: 1px;
-    margin-top: 4px;
-    transition: .2s;
-  }
-  &:not(:checked):disabled + label:before {
-    border: none;
-    background-color: var(--border-color);
-  }
-  
-  &:checked + label:before {
-    top: -2px;
-    left: -2px;
-    width: 10px;
-    height: 18px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid var(--success-color);
-    border-bottom: 2px solid var(--success-color);
-    transform: rotate(40deg);
-    backface-visibility: hidden;
-    transform-origin: 100% 100%;
-  }
-  
-  &:checked:disabled + label:before {
-    border-right: 2px solid var(--border-color);
-    border-bottom: 2px solid var(--border-color);
-  }
-}
-
 
 
 

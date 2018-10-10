@@ -1,0 +1,17 @@
+---
+to: src/app/components/common/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.jsx
+---
+import {h} from 'hyperapp'
+
+import './style.css'
+
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = (props, children) => (
+  <button className="<%= h.inflection.dasherize(name.toLowerCase()) %>" {...props}>
+    {children}
+  </button>
+)
+
+/*
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './components/common/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
+<<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> pill primary />
+*/
