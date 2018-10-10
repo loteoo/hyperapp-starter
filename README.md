@@ -89,7 +89,7 @@ http://www.hygen.io/
 
 
 ## CSS 
-PostCSS is ready to go, with nested syntax & rucksack css enhancements.
+PostCSS is ready to go, with nested syntax & rucksack css enhancements.  
 https://www.rucksackcss.org/
 
 An opinionated, 'best practices' css reset is loaded in the starterkit as well  
