@@ -1,6 +1,7 @@
 # Hyperapp 2.0 PWA/SPA boilerplate
-*Hyperapp starter kit with development on steroids*
+*Hyperapp starter kit with development on steroids*  
 
+Installation: 
 ```
 # Clone project
 git clone https://github.com/loteoo/hyperapp-boilerplate.git
