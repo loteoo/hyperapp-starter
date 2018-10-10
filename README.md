@@ -17,7 +17,7 @@ npm run build   # Build for production
 
 
 > *Disclaimer:*  
-This is an opinionated setup fine tuned to how 
+This is an opinionated setup fine-tuned to how 
 I personally build webapps with hyperapp.  
 If you're getting started with Hyperapp or with 
 JS in general, you can progressively use it's features 
