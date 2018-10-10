@@ -73,10 +73,16 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 Generate new Hyperapp components like this:
 ```
 .\node_modules\.bin\hygen component new --name 'my component'
+.\node_modules\.bin\hygen complex-component new --name 'advanced component'
 ```
-http://www.hygen.io/
+Available generators are available in the _templates folder
+If you Have hygen installed globally, which I recommend, you can do:
+```
+hygen component new --name 'my component'
+```
+instead.  
 
-> I also suggest you install hygen globally, it's awesome
+http://www.hygen.io/
 
 
 
