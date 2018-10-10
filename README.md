@@ -33,9 +33,6 @@ Code generators included for common use cases
 Uses Parcel for compilation, dev server, watcher with live reload, hot modules...  
 
 
-[Language details below](https://github.com/loteoo/hyperapp-boilerplate#syntaxes--language-specifications)
-
-
 
 *Proposed folder structure as your project grows*
 
