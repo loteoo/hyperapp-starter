@@ -34,7 +34,8 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 
 
 
-*Proposed folder structure as your project grows*
+### File structure
+Proposed folder structure as your project grows, adapt it to your needs.
 
 ```
 ├── _templates/                       # Hygen code generators
@@ -66,7 +67,7 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 
 
 
-
+### Code generators
 Generate new Hyperapp components like this:
 ```
 .\node_modules\.bin\hygen component new --name 'my component'
