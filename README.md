@@ -115,8 +115,8 @@ and let Hyperapp bring it to life
 https://github.com/jorgebucaran/hyperapp/pull/726
 
 
-### Todolist demo app:
-Basic CRUD actions
+### To-do list demo app:
+Basic CRUD actions with hyperapp 2.0
 https://github.com/loteoo/hyperapp-todolist
 
 ---  
