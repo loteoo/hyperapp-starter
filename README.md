@@ -116,7 +116,7 @@ https://github.com/jorgebucaran/hyperapp/pull/726
 
 
 ### To-do list demo app:
-Basic CRUD actions with hyperapp 2.0
+Basic CRUD actions with hyperapp 2.0  
 https://github.com/loteoo/hyperapp-todolist
 
 ---  
