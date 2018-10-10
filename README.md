@@ -75,13 +75,12 @@ Generate new Hyperapp components like this:
 .\node_modules\.bin\hygen component new --name 'my component'
 .\node_modules\.bin\hygen complex-component new --name 'advanced component'
 ```
-Available generators are available in the _templates folder
-If you Have hygen installed globally, which I recommend, you can do:
+Available generators are available in the _templates folder  
+If you Have hygen installed globally, which I recommend, you can do this instead. 
 ```
 hygen component new --name 'my component'
 ```
-instead.  
-
+ 
 http://www.hygen.io/
 
 
