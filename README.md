@@ -20,7 +20,7 @@ npm run build   # Build for production
 This is an opinionated setup fine tuned to how 
 I personally build webapps with hyperapp.  
 If you're getting started with Hyperapp or with 
-JS in general, you progressively use it's features 
+JS in general, you can progressively use it's features 
 as you learn and stick with what you know.
 
 
