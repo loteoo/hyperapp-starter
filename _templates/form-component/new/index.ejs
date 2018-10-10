@@ -12,14 +12,8 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({firstNam
   <form class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>" method="post" onsubmit={SubmitForm}>
     <h3>Form component with namespaced state</h3>
     <p>Full name: <b>{firstName} {lastName}</b></p>
-    <div className="row">
-      <div className="col">
-        <input type="text" id="firstName" name="firstName" placeholder="First name" value={firstName} oninput={[SetValue, 'firstName']} required />
-      </div>
-      <div className="col">
-        <input type="text" name="lastName" placeholder="Last name" value={lastName} oninput={[SetValue, 'lastName']} required />
-      </div>
-    </div>
+    <input type="text" id="firstName" name="firstName" placeholder="First name" value={firstName} oninput={[SetValue, 'firstName']} required />
+    <input type="text" name="lastName" placeholder="Last name" value={lastName} oninput={[SetValue, 'lastName']} required />
     {!submitted ? <button type="submit" pill>Submit</button> : <span>Submitted!</span>}
   </form>
 )
