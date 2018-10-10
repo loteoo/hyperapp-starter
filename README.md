@@ -93,9 +93,9 @@ PostCSS is ready to go, with nested syntax & rucksack css enhancements.
 https://www.rucksackcss.org/
 
 An opinionated, 'best practices' css reset is loaded in the starterkit as well  
-[sanitize.css](https://github.com/csstools/sanitize.css)
+https://github.com/csstools/sanitize.css
 
-A starter "theme" is also pre-written for you to edit.
+A starter "theme" is also pre-written for you to edit in /src/app/style.css
 
 
 
