@@ -34,8 +34,8 @@ Uses Parcel for compilation, dev server, watcher with live reload, hot modules..
 
 
 
-### File structure
-Proposed folder structure as your project grows, adapt it to your needs.
+## File structure
+Proposed folder structure as your project grows. Adapt it to your needs.
 
 ```
 ├── _templates/                       # Hygen code generators
@@ -67,7 +67,7 @@ Proposed folder structure as your project grows, adapt it to your needs.
 
 
 
-### Code generators
+## Code generators
 Generate new Hyperapp components like this:
 ```
 .\node_modules\.bin\hygen component new --name 'my component'
@@ -87,7 +87,7 @@ http://www.hygen.io/
 
 
 
-### CSS 
+## CSS 
 PostCSS is ready to go, with nested syntax & rucksack css enhancements.
 https://www.rucksackcss.org/
 
@@ -100,7 +100,7 @@ A starter "theme" is also pre-written for you to edit.
 
 
 
-## Hyperapp 2.0 TLDR:
+### Hyperapp 2.0 TLDR:
 
 State => Data of your app  
 View => Maps a given state to vDOM, which Hyperapp will use to update the DOM  
