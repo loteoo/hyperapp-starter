@@ -106,7 +106,7 @@ A starter "theme" is also pre-written for you to edit.
 State => Data of your app  
 View => Maps a given state to vDOM, which Hyperapp will use to update the DOM  
 Actions => Takes in a state, some params, returns a new state  
-Subscribtions => Trigger actions from the outside  
+Subscribtions => React to the outside world  
 Effects => Interact with the outside world  
 
 Use functional programming to describe an application 
