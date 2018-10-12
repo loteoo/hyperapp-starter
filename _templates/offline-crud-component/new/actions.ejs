@@ -31,3 +31,7 @@ export const Delete = (state, id) => ({
   ...state,
   <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.filter(item => id !== item.id)
 })
+
+
+// For a more complete example, look here:
+https://github.com/loteoo/hyperapp-todolist
