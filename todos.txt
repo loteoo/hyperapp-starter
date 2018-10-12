@@ -1,6 +1,4 @@
-fix modal component generator
-
-CRUD list generator
+modal component generator
 
 ajax REST API view generator (loads into state by id: /resource/:id)
 

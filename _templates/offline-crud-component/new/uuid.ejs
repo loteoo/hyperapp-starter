@@ -1,8 +1,5 @@
 ---
-to: src/app/utils.js
-inject: true
-append: true
-skip_if: export const uuid = () =>
+to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/uuid.js
 ---
 // Quickly generates a unique ID
 export const uuid = () =>
