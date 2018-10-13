@@ -1,0 +1,31 @@
+---
+to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/index.jsx
+---
+import {h} from 'hyperapp'
+
+// Import local actions
+import {Add, Update, Delete} from './actions'
+
+import './style.css'
+
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>}) => (
+  <div className="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
+    <p>Basic CRUD actions. Total: <b>{<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.length}</b></p>
+    <ul className="list">
+      {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.map(item => <Item {...item} />)}
+    </ul>
+  </div>
+)
+
+// Item component
+const Item = ({id, title}) => (
+  <li className="item" key={id}>
+    {title}
+  </li>
+)
+
+
+/*
+import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
+<<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>={state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
+*/

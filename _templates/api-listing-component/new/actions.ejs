@@ -1,0 +1,26 @@
+---
+to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js
+---
+
+// Fetch wrapper
+import {Http} from './Http.js'
+
+// Nested merge helper
+export const scope = (state, nestedState) => ({
+  ...state,
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: nestedState
+})
+
+// Adds an empty item from an array
+export const Add = (state, item) => scope(state, {
+  ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+  items: state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.items.concat(item)
+})
+
+
+// Fetch items
+export const FetchItems = (state, item) => scope(state, {
+  ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+  isFetching: true
+})
+

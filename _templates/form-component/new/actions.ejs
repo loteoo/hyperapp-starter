@@ -2,12 +2,12 @@
 to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js
 ---
 
-export const nestedSetter = (state, nestedState) => ({
+export const scope = (state, nestedState) => ({
   ...state,
   <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: nestedState
 })
 
-export const SetValue = (state, key, ev) => nestedSetter(state, {
+export const SetValue = (state, key, ev) => scope(state, {
   ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
   [key]: ev.target.value
 })
@@ -15,7 +15,7 @@ export const SetValue = (state, key, ev) => nestedSetter(state, {
 export const SubmitForm = (state, ev) => {
   ev.preventDefault();
   alert('Submitted!\nForm state: \n\n' + JSON.stringify(state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>, null, 2));
-  return nestedSetter(state, {
+  return scope(state, {
     ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
     submitted: true
   })
