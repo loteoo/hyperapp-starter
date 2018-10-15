@@ -104,7 +104,7 @@ Effects => Functions in wich you do encapsulate side effects, to interact with t
 Use functional programming to describe an application  
 and let Hyperapp bring it to life  
 
-> Please correct me if you disagree on this TLDR (https://meta.wikimedia.org/wiki/Cunningham%27s_Law)[😈]  
+> Please correct me if you disagree on this TLDR [😈](https://meta.wikimedia.org/wiki/Cunningham%27s_Law)  
 
 https://github.com/jorgebucaran/hyperapp/pull/726
 
