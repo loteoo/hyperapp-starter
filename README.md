@@ -106,7 +106,7 @@ and let Hyperapp bring it to life
 
 https://github.com/jorgebucaran/hyperapp/pull/726  
 
-> [Please correct me if you disagree with this TLDR 😈](https://meta.wikimedia.org/wiki/Cunningham%27s_Law)  
+> Please correct me if you disagree with this TLDR [😈](https://meta.wikimedia.org/wiki/Cunningham%27s_Law)  
 
 
 
