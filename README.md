@@ -96,10 +96,10 @@ A starter "theme" is also pre-written for you to edit in /src/app/style.css
 ### Hyperapp 2.0 TLDR:
 
 State => Data of your app, usually a javascript object  
-View => Pure function that maps the state to a DOM representation (called virtual DOM)  
-Actions => Pure functions that take in a state, some params, and returns a new state  
-Subscribtions => Fancy event listeners that are aware of the state  
-Effects => Functions in wich you do encapsulate side effects, to interact with the outside world.  
+View => Pure function that maps the State to a DOM representation (called virtual DOM)  
+Actions => Pure functions that take in a State, some params, and returns a new State  
+Subscribtions => Fancy event listeners that are aware of the State and can dispatch Actions  
+Effects => Functions in which you encapsulate side effects to interact with the outside world.  
 
 Use functional programming to describe an application  
 and let Hyperapp bring it to life  
