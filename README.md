@@ -102,7 +102,7 @@ Subscribtions => Fancy event listeners that are aware of the State and can dispa
 Effects => Functions in which you encapsulate side effects to interact with the outside world.  
 
 Use functional programming to describe an application  
-and let Hyperapp bring it to life  
+Let Hyperapp bring it to life  
 
 https://github.com/jorgebucaran/hyperapp/pull/726  
 
