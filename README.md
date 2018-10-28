@@ -106,7 +106,7 @@ Let Hyperapp bring it to life
 
 https://github.com/jorgebucaran/hyperapp/pull/726  
 
-> [Correct me if I got it wrong 😈](https://meta.wikimedia.org/wiki/Cunningham%27s_Law)  
+[Correct me if I got it wrong 😈](https://meta.wikimedia.org/wiki/Cunningham%27s_Law)  
 
 
 
