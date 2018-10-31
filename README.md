@@ -20,7 +20,7 @@ npm run build   # Build for production
  
 ## In a nutshell
 
-JS up to ES8 with JSX  
+JS up to ES2017 with JSX  
 PostCSS with rucksack enhancements  
 Code generators included for common use cases  
 Uses Parcel for compilation, dev server, watcher with live reload, hot modules...  
