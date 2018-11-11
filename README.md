@@ -115,12 +115,13 @@ Basic CRUD actions with hyperapp 2.0
 https://github.com/loteoo/hyperapp-todolist
 
 
-> *Disclaimer:*  
+### Disclaimer:
 This is an opinionated setup fine-tuned to how 
 I personally build webapps with hyperapp.  
 If you're getting started with Hyperapp or with 
 JS in general, you can progressively use it's features 
-as you learn and stick with what you know.
+as you learn and stick with what you know. Feel free 
+fork and adapt to your needs!
 
 
 ---  
