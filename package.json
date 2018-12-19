@@ -10,11 +10,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.4.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "classcat": "^3.2.3",
     "hygen": "^1.6.2",
     "hyperapp": "github:jorgebucaran/hyperapp#V2",
-    "parcel-bundler": "^1.10.3",
+    "parcel-bundler": "^1.11.0",
     "postcss-modules": "^1.4.1",
     "postcss-nested": "^3.0.0",
     "rucksack-css": "^1.0.2",
