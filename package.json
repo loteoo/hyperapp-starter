@@ -15,7 +15,7 @@
     "hyperapp": "github:jorgebucaran/hyperapp#V2",
     "parcel-bundler": "^1.11.0",
     "postcss-modules": "^1.4.1",
-    "postcss-nested": "^3.0.0",
+    "postcss-nested": "^4.1.1",
     "rucksack-css": "^1.0.2",
     "sanitize.css": "^6.0.0"
   }
