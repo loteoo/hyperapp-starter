@@ -5,18 +5,19 @@
   "author": "Alexandre Lotte",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html --out-dir public --open",
-    "build": "env NODE_ENV=production parcel build ./src/index.html --no-source-maps --out-dir public --detailed-report"
+    "start": "parcel src/index.html --open",
+    "build": "parcel build ./src/index.html --no-source-maps --detailed-report --no-content-hash"
+  },
+  "dependencies": {
+    "hyperapp": "github:jorgebucaran/hyperapp#V2",
+    "hyperapp-render": "^3.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.2",
-    "classcat": "^3.2.3",
+    "autoprefixer": "^9.4.3",
     "hygen": "^1.6.2",
-    "hyperapp": "github:jorgebucaran/hyperapp#V2",
     "parcel-bundler": "^1.11.0",
     "postcss-modules": "^1.4.1",
     "postcss-nested": "^4.1.1",
-    "rucksack-css": "^1.0.2",
-    "sanitize.css": "^6.0.0"
+    "rucksack-css": "^1.0.2"
   }
 }

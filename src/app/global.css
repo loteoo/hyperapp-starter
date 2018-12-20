@@ -1,18 +1,23 @@
 /*------------------------------------*\
-
   Global css 
   
   This is a styled boilerplate which 
   should help you build a css "theme".
-
   Feel free to edit, remove or add 
   anything here!
-
   Nested selectors, rucksack shortcuts 
   and cssnext are enabled, go wild!
-
 \*------------------------------------*/
 
+/* === Optionated reset === */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
 
 
 /* === Global variables === */
@@ -30,17 +35,16 @@
 }
 
 
-
 /* === Default cascade === */
 html {
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: responsive 14px 18px;
+  font-size: responsive 14px 16px;
   font-range: 420px 1280px;
   color: var(--text-color);
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  text-rendering: opximizeLegibility;
   -moz-font-feature-settings: "liga" on;
   scroll-behavior: smooth;
 }
@@ -100,6 +104,8 @@ small, h6 {
 
 pre {
   font-family: monospace, monospace;
+  font-weight: inherit;
+  line-height: inherit;
   font-size: 0.85rem;
   width: min-content;
   color: var(--emphasis-text-color);
@@ -107,11 +113,12 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
-  padding: 8pt 16pt;
+  padding: 8px 16px;
   width: 100%;
   overflow: auto;
   border: 1px solid var(--border-color);
   border-radius: 0.2rem;
+  text-align: left;
 }
 
 a {
@@ -122,11 +129,13 @@ a {
 
 button {
   display: inline-block;
-  padding: 6pt 20pt;
+  padding: 6px 20px;
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   font-weight: 400;
-  line-height: 1.7;
   white-space: nowrap;
   background-color: transparent;
   border-radius: 1.5rem;
@@ -155,22 +164,24 @@ svg {
 }
 
 label {
-  margin-bottom: 2pt;
+  margin-bottom: 2px;
   display: block;
   text-align: left;
   color: inherit;
   font-size: 0.9em;
-  padding-left: 10pt;
+  padding-left: 10px;
 }
 
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+input {
   appearance: none;
   border: 1px solid var(--border-color);
   width: 100%;
   color: var(--emphasis-text-color);
   font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
-  padding: 10pt 20pt;
+  line-height: inherit;
+  padding: 10px 20px;
   border-radius: 1.5rem;
   background-color: var(--alt-background-color);
   margin-bottom: 1rem;
@@ -188,8 +199,10 @@ textarea {
   width: 100%;
   color: var(--emphasis-text-color);
   font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
-  padding: 12pt 24pt;
+  line-height: inherit;
+  padding: 12px 24px;
   border-radius: 1.5rem;
   background-color: var(alt-background-color);
   margin-bottom: 1rem;
@@ -210,7 +223,7 @@ select {
   color: var(--emphasis-text-color);
   font-family: inherit;
   font-weight: inherit;
-  padding: 10pt 20pt;
+  padding: 10px 20px;
   margin-bottom: 1.4em;
   display: block;
   border-radius: 1.5rem;
@@ -250,7 +263,6 @@ select {
 
 
 
-
 /*------------------------------------*\
     Utilities
 \*------------------------------------*/
@@ -281,29 +293,25 @@ select {
 
 
 
+
 /*------------------------------------*\
-    Root view styling
+    Root styling
 \*------------------------------------*/
-
 .app {
-  
-}
-
-header {
-  padding: 6rem 0;
-  overflow: auto;
-  background: linear-gradient(270deg,#6c63ff,#4641ff);
-  text-align: center;
-  color: var(--background-color);
-  h1 {
-    color: inherit;
+  header {
+    padding: 6rem 0;
+    overflow: auto;
+    background: linear-gradient(270deg,#6c63ff,#4641ff);
+    text-align: center;
+    color: var(--background-color);
+    h1 {
+      color: inherit;
+    }
+    p {
+      margin-bottom: 0;
+    }
   }
-  p {
-    margin-bottom: 0;
+  main {
+    padding: 3rem 0;
   }
-}
-
-
-main {
-  padding: 3rem 0;
 }

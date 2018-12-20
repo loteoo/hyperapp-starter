@@ -1,11 +1,11 @@
 import {app} from 'hyperapp'
 import {init} from './init'
-import {view} from './view'
+import {App} from './App'
 
 // Initialize the app
 app({
   init,
-  view,
+  view: App,
   subscriptions: console.log,
   container: document.body
 })

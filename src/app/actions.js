@@ -3,8 +3,8 @@
 // ==================
 
 
-// Sets the new item input value in the state
-export const setInputValue = (state, ev) => ({
+// Sets the a value to the given key in the state
+export const SetValue = (state, key, ev) => ({
   ...state,
-  inputValue: ev.target.value
+  [key]: ev.target.value
 })
