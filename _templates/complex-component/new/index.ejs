@@ -4,20 +4,25 @@ to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/in
 import {h} from 'hyperapp'
 
 // Import local actions
-import {Up, Down} from './actions'
+import {Up, Down, SetText} from './actions'
 
 import './style.css'
 
-export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({count = count || 0}) => (
-  <div className="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
-    <p>Component with namespaced state within the global state</p>
-    <h2>{count}</h2>
-    <button onclick={[Down]}>-</button>
-    <button onclick={[Up]}>+</button>
+export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({state}) => (
+  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
+    <h3>{state.text}</h3>
+    <div class="centered">
+      <h2>{state.count}</h2>
+      <button onclick={Down}>-</button>
+      <button onclick={Up}>+</button>
+    </div>
+    <input type="text" value={state.text} oninput={SetText} />
+    <h6>Component state: </h6>
+    <pre>{JSON.stringify(state, null, 2)}</pre>
   </div>
 )
 
 /*
 import {<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>} from './components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>'
-<<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> {...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
+<<%= h.inflection.camelize(name.replace(/\s/g, '_')) %> state={state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>} />
 */

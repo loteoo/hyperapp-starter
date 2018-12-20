@@ -9,9 +9,9 @@ import {Add, Update, Delete} from './actions'
 import './style.css'
 
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>}) => (
-  <div className="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
+  <div class="<%= h.inflection.dasherize(name.toLowerCase()) %>" key="<%= h.inflection.dasherize(name.toLowerCase()) %>">
     <p>Basic CRUD actions. Total: <b>{<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.length}</b></p>
-    <ul className="list">
+    <ul class="list">
       {<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>.map(item => <Item {...item} />)}
     </ul>
   </div>
@@ -19,7 +19,7 @@ export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({<%= h.in
 
 // Item component
 const Item = ({id, title}) => (
-  <li className="item" key={id}>
+  <li class="item" key={id}>
     {title}
   </li>
 )

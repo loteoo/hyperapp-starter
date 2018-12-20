@@ -7,8 +7,8 @@ import cc from 'classcat'
 import './style.css'
 
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({label = label || 'Label', name = name || 'name', type = type || 'text', placeholder = placeholder || ' ', required, hint, ...rest}) => (
-  <div className={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
-    {hint ? <p className="hint">{hint}</p> : null}
+  <div class={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
+    {hint ? <p class="hint">{hint}</p> : null}
     <input type={type} name={name} id={name} placeholder={placeholder} required={required} {...rest} />
     <label for={name}>{label}{required ? ' *' : null}</label>
   </div>

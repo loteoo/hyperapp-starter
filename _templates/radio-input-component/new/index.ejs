@@ -7,7 +7,7 @@ import cc from 'classcat'
 import './style.css'
 
 export const <%= h.inflection.camelize(name.replace(/\s/g, '_')) %> = ({label = label || 'Label', name = name || 'name', required, ...rest}) => (
-  <div className={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
+  <div class={cc(['<%= h.inflection.dasherize(name.toLowerCase()) %>', name])} key={name}>
     <input type="radio" name={name} id={name} required={required} {...rest} />
     <label for={name}>{label}{required ? ' *' : null}</label>
   </div>

@@ -2,21 +2,22 @@
 to: src/app/components/<%= h.inflection.camelize(name.replace(/\s/g, '_')) %>/actions.js
 ---
 
-export const scope = (state, nestedState) => ({
+const merge = (state, fragment) => ({
   ...state,
-  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: nestedState
+  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: {
+    ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+    ...fragment
+  }
 })
 
-export const SetValue = (state, key, ev) => scope(state, {
-  ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+export const SetValue = (state, key, ev) => merge(state, {
   [key]: ev.target.value
 })
 
 export const SubmitForm = (state, ev) => {
   ev.preventDefault();
   alert('Submitted!\nForm state: \n\n' + JSON.stringify(state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>, null, 2));
-  return scope(state, {
-    ...state.<%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>,
+  return merge(state, {
     submitted: true
   })
 }
