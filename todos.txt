@@ -1,9 +1,0 @@
-modal component generator
-
-ajax REST API view generator (loads into state by id: /resource/:id)
-
-button generator (<Link> or action <button> or <a href> & simplify from global css, move to component generators)
-
-Radio & checkbox input generator
-
-ajax autocomplete ID picker generator

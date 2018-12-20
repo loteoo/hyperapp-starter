@@ -46,13 +46,13 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   │   │   │   └── other.png         # Other related files
 │   │   │   └── {ComponentName}.jsx   # Simple component
 │   │   ├── actions.js                # Global actions
-│   │   ├── index.js                  # Hyperapp instantiation
 │   │   ├── init.js                   # Initial app state
 │   │   ├── global.css                # Global "Theme" styles
 │   │   ├── utils.js                  # Utility functions
-│   │   └── App.jsx                  # Root view
+│   │   └── view.jsx                  # Root view
 │   ├── assets/                       # Global application assets (favicon, fonts...)
-│   ├── index.html                    # Parcel entry
+│   ├── app.js                        # Hyperapp instantiation
+│   ├── index.html                    # Parcel entry & html frame
 │   ├── ...
 ├── ...
 ...
