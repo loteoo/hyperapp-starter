@@ -39,17 +39,18 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   │   │   ├── common/               # Utility components, ex: text input, modal container, etc.
 │   │   │   ├── pages/                # Pages are top level components, generally triggered by a router
 │   │   │   ├── {ComponentName}/      # Advanced component with multiple files
-│   │   │   │   ├── index.jsx
-│   │   │   │   ├── actions.js
-│   │   │   │   ├── style.css
-│   │   │   │   └── other.png
+│   │   │   │   ├── actions.js        # Local actions
+│   │   │   │   ├── index.jsx         # Exported view
+│   │   │   │   ├── init.js           # Initial local state
+│   │   │   │   ├── style.css         # Component styles
+│   │   │   │   └── other.png         # Other related files
 │   │   │   └── {ComponentName}.jsx   # Simple component
 │   │   ├── actions.js                # Global actions
 │   │   ├── index.js                  # Hyperapp instantiation
 │   │   ├── init.js                   # Initial app state
-│   │   ├── style.css                 # Global css
+│   │   ├── global.css                # Global "Theme" styles
 │   │   ├── utils.js                  # Utility functions
-│   │   └── view.jsx                  # Root view
+│   │   └── App.jsx                  # Root view
 │   ├── assets/                       # Global application assets (favicon, fonts...)
 │   ├── index.html                    # Parcel entry
 │   ├── ...
