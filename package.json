@@ -9,8 +9,7 @@
     "build": "parcel build ./src/index.html --no-source-maps --detailed-report --no-content-hash"
   },
   "dependencies": {
-    "hyperapp": "github:jorgebucaran/hyperapp#V2",
-    "hyperapp-render": "^3.0.0"
+    "hyperapp": "github:jorgebucaran/hyperapp#V2"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
