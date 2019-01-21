@@ -1,5 +1,8 @@
 module.exports = {
-  'extends': 'standard',
+  'plugins': [
+    'fp'
+  ],
+  'extends': ['standard', 'plugin:fp/recommended'],
   'rules': {
     'no-unused-vars': [2, { 'varsIgnorePattern': 'h' }],
     'object-curly-spacing': [2, 'never'],
