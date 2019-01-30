@@ -1,8 +1,5 @@
 import {h} from 'hyperapp'
 
-// Import styles
-import './global.css'
-
 // Import actions
 import {SetValue} from './actions'
 
