@@ -1,7 +1,0 @@
----
-to: src/app/init.js
-inject: true
-after: "export const init = {"
-skip_if: <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>
----
-  <%= h.inflection.camelize(name.replace(/\s/g, '_'), true) %>: [],
