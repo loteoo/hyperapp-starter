@@ -4,7 +4,7 @@ import {h} from 'hyperapp'
 import {SetValue} from './actions'
 
 // Root view
-export const view = state => (
+export default state => (
   <div class="app">
     <header>
       <div class="container">

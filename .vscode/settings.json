@@ -1,6 +1,3 @@
 {
-  "prettier.eslintIntegration": true,
-  "files.associations": {
-    "*.css": "scss"
-  }
+  "prettier.eslintIntegration": true
 }
