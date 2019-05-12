@@ -23,8 +23,7 @@ html {
   background-color: var(--background-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: opximizeLegibility;
-  -moz-font-feature-settings: "liga" on;
+  text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
 
