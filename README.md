@@ -62,10 +62,10 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 
 
 ## Code generators
+(TODO)
 Generate new Hyperapp components like this:
 ```
 .\node_modules\.bin\hygen component new --name 'my component'
-.\node_modules\.bin\hygen complex-component new --name 'advanced component'
 ```
 Available generators are located in the _templates folder  
 If you have hygen installed globally, which I recommend, you can do this instead: 

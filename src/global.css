@@ -4,12 +4,12 @@
 
 /* === Global variables === */
 :root {
-	--text-color: #525f7f;
-	--emphasis-text-color: #2e374d;
 	--background-color: #ffffff;
-	--alt-background-color: #f7f7f7;
-  --accent-color: #6C63FF;
-  --alt-accent-color: #4641FF;
+	--alt-background-color: #f4f4f4;
+
+	--text-color: #111;
+  --accent-color: #4641FF;
+  
   --border-color: #eee;
   --success-color: #06d19c;
   --danger-color: tomato;

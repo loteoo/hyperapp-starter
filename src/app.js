@@ -3,4 +3,4 @@ import init from './app/init'
 import view from './app/view'
 
 // Initialize the app
-app({ init, view, container: document.body })
+app({ init, view, node: document.body })
