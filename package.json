@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build ./src/index.html --no-source-maps --detailed-report"
+    "build": "rimraf dist && parcel build ./src/index.html --no-source-maps --detailed-report && workbox generateSW workbox-config.js"
   },
   "dependencies": {
     "hyperapp": "^2.0.0-beta.11",
@@ -15,6 +15,8 @@
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "hygen": "^4.0.2",
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3",
+    "workbox-cli": "^4.3.1"
   }
 }

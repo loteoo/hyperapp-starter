@@ -4,3 +4,5 @@ import view from './app/view'
 
 // Initialize the app
 app({ init, view, node: document.body })
+
+navigator.serviceWorker.register(`${window.location.origin}/sw.js`)
