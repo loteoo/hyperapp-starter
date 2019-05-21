@@ -24,7 +24,7 @@ npm start       # Dev server + live reload
 ```
 npm run build   # Build for production and generate service worker
 ```
-[.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/master.zip)
+Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/master.zip)
 
  
 ## Overview
