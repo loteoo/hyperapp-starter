@@ -89,11 +89,11 @@ http://www.hygen.io/
 
 ### Hyperapp 2.0 TLDR:
 
-- State: Runtime data of your app, usually a javascript object.  
-- View: Pure function that maps the State of your app to a DOM representation of the app (called virtual DOM). The vDOM will get rendered efficiently to the browser by hyperapp.  
-- Actions: Pure functions that receives the current State, some params, and returns the next State.  
-- Subscribtions: Declarative wrappers around event listeners. They are aware of the State and can dispatch Actions.  
-- Effects: Declarative wrappers around side effects to interact with the outside world.  
+- **State**: Runtime data of your app, usually a javascript object.  
+- **View**: Pure function that maps the State of your app to a DOM representation of the app (called virtual DOM). The vDOM will get rendered efficiently to the browser by hyperapp.  
+- **Actions**: Pure functions that receives the current State, some params, and returns the next State.  
+- **Subscribtions**: Declarative wrappers around event listeners. They are aware of the State and can dispatch Actions.  
+- **Effects**: Declarative wrappers around side effects to interact with the outside world.  
 
 Basically, use functional programming to describe an application and let Hyperapp bring it to life!  
 
