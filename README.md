@@ -35,9 +35,9 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 ├── public/                           # Compiled static files (parcel output)
 ├── src/                              # Application source code
 │   ├── app/                          # Global app files
+│   │   ├── common/                   # Utility components, ex: text input, modal container, etc.
+│   │   ├── pages/                    # Pages are top level components, generally triggered by a router
 │   │   ├── components/               # Vertically separated components
-│   │   │   ├── common/               # Utility components, ex: text input, modal container, etc.
-│   │   │   ├── pages/                # Pages are top level components, generally triggered by a router
 │   │   │   ├── {ComponentName}/      # Advanced component with multiple files
 │   │   │   │   ├── actions.js        # Local actions
 │   │   │   │   ├── index.jsx         # Exported view
