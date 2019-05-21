@@ -100,7 +100,7 @@ https://github.com/loteoo/hyperapp-todolist
 
 ### FAQ:
 
-> Why so many commits?
+> Why so many commits?  
 The boilerplate has evolved and changed over time.
 
 
