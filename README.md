@@ -61,10 +61,9 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   │   └── view.jsx                  # Root view
 │   ├── assets/                       # Global application assets (favicon, fonts...)
 │   ├── app.js                        # Hyperapp instantiation
-│   │   global.css                    # Global styles
+│   ├── global.css                    # Global styles
 │   ├── index.html                    # Parcel entry & html frame
-│   ├── manifest.webmanifest          # Web app manifest
-│   ├── ...
+│   └── manifest.webmanifest          # Web app manifest
 ├── ...
 ...
 ```
