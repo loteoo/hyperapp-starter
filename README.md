@@ -102,7 +102,7 @@ https://github.com/loteoo/hyperapp-todolist
 
 > Why so many commits?  
 
-The boilerplate has evolved and changed over time.
+The boilerplate has evolved and changed a lot over time.
 
 
 ---  
