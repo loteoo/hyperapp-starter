@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://github.com/jorgebucaran/hyperapp">
-    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-boilerplate/master/src/assets/icon-180x180.png" width="64" />
+    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-boilerplate/master/src/assets/icon-180x180.png" width="80" />
   </a>
 </p>
 <h1 align="center">
-  Hyperapp 2.0 PWA/SPA boilerplate
+  Hyperapp 2.0 boilerplate
 </h1>
 
-*Hyperapp starter kit with development on steroids*  
+Ready-to-go Hyperapp PWA/SPA starter template  
 
 
 ## 🚀 Quick start: 
@@ -27,13 +27,13 @@ npm run build   # Build for production and generate service worker
 
 
  
-## In a nutshell
+## Overview
 - Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go  
 - [Hygen](https://www.hygen.io/) code generators are included for common use cases. (More to come!)  
 - Precaching out works of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers
 - PWA/SPA ready with a default manifest file
-- Sane CSS defaults with [sanitize.css](https://csstools.github.io/sanitize.css/)
+- Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
 - Uses the [standard](https://standardjs.com/) JavaScript style guide  
 
 
