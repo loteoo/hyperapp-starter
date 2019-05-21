@@ -4,4 +4,4 @@ module.exports = {
   'rules': {
     'no-unused-vars': [2, { 'varsIgnorePattern': 'h' }]
   }
-};
+}

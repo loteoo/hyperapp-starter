@@ -6,10 +6,8 @@
 :root {
 	--background-color: #ffffff;
 	--alt-background-color: #f4f4f4;
-
 	--text-color: #111;
   --accent-color: #4641FF;
-  
   --border-color: #eee;
   --success-color: #06d19c;
   --danger-color: tomato;

@@ -4,4 +4,4 @@ module.exports = {
     "**/*.{css,js,html,webmanifest}"
   ],
   "swDest": "./dist/sw.js"
-};
+}
