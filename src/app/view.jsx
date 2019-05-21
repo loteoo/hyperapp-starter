@@ -1,14 +1,14 @@
-import {h} from 'hyperapp'
+import { h } from 'hyperapp'
 
 // Import actions
-import {SetValue} from './actions'
+import { SetValue } from './actions'
 
-const targetValue = event => event.target.value
+const targetValue = event => event.target.value;
 
 const container = {
   maxWidth: '1024px',
   margin: '0 auto',
-  padding: '1rem'
+  padding: '1rem',
 }
 
 // Root view
