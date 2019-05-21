@@ -19,13 +19,13 @@ npm run build   # Build for production
 
  
 ## In a nutshell
-
-- Uses [Parcel](https://parceljs.org/) for compilation, dev server, watcher and hot modules reloading.  (It's  blazing fast easy to use and reliable)
+- Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) ready  
 - [Hygen](https://www.hygen.io/) code generators included for common use cases. (More to come!)  
 - Precaching out works of the box using [workbox] to generate service workers
 - PWA/SPA ready with a default manifest file
 - Sane CSS defaults with [sanitize.css](https://csstools.github.io/sanitize.css/)
+
 
 
 ## File structure
