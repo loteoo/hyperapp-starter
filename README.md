@@ -1,7 +1,16 @@
-# Hyperapp 2.0 PWA/SPA boilerplate
+<p align="center">
+  <a href="https://github.com/jorgebucaran/hyperapp">
+    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-boilerplate/master/src/assets/icon-180x180.png" width="64" />
+  </a>
+</p>
+<h1 align="center">
+  Hyperapp 2.0 PWA/SPA boilerplate
+</h1>
+
 *Hyperapp starter kit with development on steroids*  
 
-## Installation: 
+
+## 🚀 Quick start: 
 ```
 # Clone project
 git clone https://github.com/loteoo/hyperapp-boilerplate.git
@@ -29,31 +38,32 @@ npm run build   # Build for production and generate service worker
 
 
 ## File structure
-Proposed folder structure as your project grows. Adapt it to your needs.
+Proposed folder structure as your project grows. Adapt it to your needs.  
 
 ```
 ├── _templates/                       # Hygen code generators
-├── public/                           # Compiled static files (parcel output)
+├── dist/                             # Compiled static files (parcel output)
 ├── src/                              # Application source code
-│   ├── app/                          # Global app files
-│   │   ├── common/                   # Utility components, ex: text input, modal container, etc.
-│   │   ├── pages/                    # Pages are top level components, generally triggered by a router
-│   │   ├── components/               # Vertically separated components
+│   ├── app/                          # App files
+│   │   ├── pages/                    # Pages are top level components, triggered by a router
+│   │   ├── theme/                    # Small, utility components, ex: text input, modal container, etc.
+│   │   ├── components/               # Application components
 │   │   │   ├── {ComponentName}/      # Advanced component with multiple files
 │   │   │   │   ├── actions.js        # Local actions
 │   │   │   │   ├── index.jsx         # Exported view
 │   │   │   │   ├── init.js           # Initial local state
 │   │   │   │   ├── style.css         # Component styles
-│   │   │   │   └── other.png         # Other related files
-│   │   │   └── {ComponentName}.jsx   # Simple component
+│   │   │   │   └── other.svg         # Other related files (which are only used by the component)
+│   │   │   └── {ComponentName}.jsx   # Simple file component
 │   │   ├── actions.js                # Global actions
 │   │   ├── init.js                   # Initial app state
-│   │   ├── global.css                # Global "Theme" styles
-│   │   ├── utils.js                  # Utility functions
+│   │   ├── utils.js                  # Misc utility functions
 │   │   └── view.jsx                  # Root view
 │   ├── assets/                       # Global application assets (favicon, fonts...)
 │   ├── app.js                        # Hyperapp instantiation
+│   │   global.css                    # Global styles
 │   ├── index.html                    # Parcel entry & html frame
+│   ├── manifest.webmanifest          # Web app manifest
 │   ├── ...
 ├── ...
 ...
