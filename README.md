@@ -34,7 +34,7 @@ npm run build   # Build for production and generate service worker
 - PWA/SPA ready with a default web app manifest
 - Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
 - Uses the [standard](https://standardjs.com/) JavaScript style guide  
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) and the latest ES6-7-8-9 syntaxes are ready to use thanks to Parcel  
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) and the latest ES6-7-8-9 syntax is ready to use thanks to Parcel  
 
 
 ## File structure
