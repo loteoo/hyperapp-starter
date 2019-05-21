@@ -97,6 +97,7 @@ http://www.hygen.io/
 
 Basically, use functional programming to describe an application and let Hyperapp bring it to life!  
 
+Read the official documentation here:  
 https://github.com/jorgebucaran/hyperapp/
 
 
