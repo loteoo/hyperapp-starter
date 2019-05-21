@@ -13,7 +13,7 @@ npm start       # Dev server + live reload
 ```
 
 ```
-npm run build   # Build for production
+npm run build   # Build for production and generate service worker
 ```
 
 
