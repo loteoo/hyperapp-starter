@@ -25,7 +25,7 @@ npm run build   # Build for production
 - Precaching out works of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers
 - PWA/SPA ready with a default manifest file
 - Sane CSS defaults with [sanitize.css](https://csstools.github.io/sanitize.css/)
-
+- Uses the [standard](https://standardjs.com/) JavaScript style guide.
 
 
 ## File structure
