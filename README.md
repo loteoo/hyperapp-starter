@@ -108,6 +108,8 @@ Basic CRUD actions with hyperapp 2.0
 https://github.com/loteoo/hyperapp-todolist
 
 
+Pull requests are welcome!
+
 ### FAQ:
 
 > Why so many commits?  
