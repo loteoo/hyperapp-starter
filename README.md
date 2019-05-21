@@ -29,12 +29,12 @@ npm run build   # Build for production and generate service worker
  
 ## Overview
 - Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go  
 - [Hygen](https://www.hygen.io/) code generators are included for common use cases. (More to come!)  
-- Precaching out works of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers
-- PWA/SPA ready with a default manifest file
+- Works offline out of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers and precache application files
+- PWA/SPA ready with a default web app manifest
 - Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
 - Uses the [standard](https://standardjs.com/) JavaScript style guide  
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) and the latest ES6-7-8-9 syntaxes are ready to use thanks to Parcel  
 
 
 ## File structure
