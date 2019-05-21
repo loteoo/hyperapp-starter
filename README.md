@@ -20,9 +20,9 @@ npm run build   # Build for production
  
 ## In a nutshell
 - Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) ready  
-- [Hygen](https://www.hygen.io/) code generators included for common use cases. (More to come!)  
-- Precaching out works of the box using [workbox] to generate service workers
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go.  
+- [Hygen](https://www.hygen.io/) code generators are included for common use cases. (More to come!)  
+- Precaching out works of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers
 - PWA/SPA ready with a default manifest file
 - Sane CSS defaults with [sanitize.css](https://csstools.github.io/sanitize.css/)
 
@@ -63,7 +63,7 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 
 
 ## Code generators
-(TODO: use enquired to ask questions and generate the corresponding component)
+(TODO: use enquirer to ask questions and generate the corresponding component)
 Generate new Hyperapp components like this:
 ```
 hygen component new --name 'component name'
@@ -96,6 +96,12 @@ https://github.com/jorgebucaran/hyperapp/
 ### To-do list demo app:
 Basic CRUD actions with hyperapp 2.0  
 https://github.com/loteoo/hyperapp-todolist
+
+
+### FAQ:
+
+> Why so many commits?
+The boilerplate has evolved and changed over time.
 
 
 ---  
