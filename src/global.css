@@ -16,7 +16,6 @@
 /* === Default cascade === */
 html {
   font-family: 'Open Sans', Arial, sans-serif;
-  font-display: swap;
   color: var(--text-color);
   background-color: var(--background-color);
   scroll-behavior: smooth;
