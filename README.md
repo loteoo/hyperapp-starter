@@ -64,6 +64,7 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   ├── global.css                    # Global styles
 │   ├── index.html                    # Parcel entry & html frame
 │   └── manifest.webmanifest          # Web app manifest
+├── static/                           # Files to be copied in dist folder
 ├── ...
 ...
 ```
