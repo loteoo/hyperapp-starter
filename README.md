@@ -34,7 +34,8 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/
 - PWA/SPA ready with a default web app manifest
 - Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
 - Uses the [standard](https://standardjs.com/) JavaScript style guide  
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) and the latest ES6-7-8-9 syntax is ready to use thanks to Parcel  
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go with automatic import of the `h` function
+- All of the ES6-7-8-9 goodies ready to use thanks to Parcel.
 
 
 ## File structure
@@ -47,14 +48,14 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   ├── app/                          # App files
 │   │   ├── pages/                    # Pages are top level components, triggered by a router
 │   │   ├── theme/                    # Small, utility components, ex: text input, modal container, etc.
-│   │   ├── components/               # Application components
+│   │   ├── components/               # Hyperapp components
 │   │   │   ├── {ComponentName}/      # Advanced component with multiple files
 │   │   │   │   ├── actions.js        # Local actions
 │   │   │   │   ├── index.jsx         # Exported view
 │   │   │   │   ├── init.js           # Initial local state
 │   │   │   │   ├── style.css         # Component styles
 │   │   │   │   └── other.svg         # Other related files (which are only used by the component)
-│   │   │   └── {ComponentName}.jsx   # Simple file component
+│   │   │   └── {ComponentName}.jsx   # Single file component
 │   │   ├── actions.js                # Global actions
 │   │   ├── init.js                   # Initial app state
 │   │   ├── utils.js                  # Misc utility functions
