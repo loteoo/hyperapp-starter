@@ -6,16 +6,20 @@
 :root {
 	--background-color: #ffffff;
 	--alt-background-color: #f4f4f4;
-	--text-color: #111;
+	--text-color: #121212;
   --accent-color: #4641FF;
-  --border-color: #eee;
+  --border-color: #eeeeee;
   --success-color: #06d19c;
   --danger-color: tomato;
+  --system-font: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 /* === Default cascade === */
 html {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: var(--system-font);
   color: var(--text-color);
   background-color: var(--background-color);
   scroll-behavior: smooth;
