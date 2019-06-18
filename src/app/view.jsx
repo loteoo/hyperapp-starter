@@ -1,4 +1,3 @@
-import { h } from 'hyperapp'
 
 // Import actions
 import { SetValue } from './actions'
