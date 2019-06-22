@@ -33,7 +33,7 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/
 - Works offline out of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers and precache application files
 - PWA/SPA ready with a default web app manifest
 - Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
-- Uses the [standard](https://standardjs.com/) JavaScript style guide  
+- Uses the [Standard](https://standardjs.com/) JavaScript style guide with eslint  
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go with automatic import of the `h` function
 - All of the ES6-7-8-9 goodies ready to use thanks to Parcel.
 
