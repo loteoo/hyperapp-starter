@@ -9,7 +9,7 @@ import init from './app/init'
 import view from './app/view'
 
 // Initialize the app
-app({ init, view, node: document.body })
+app({ init, view, node: document.getElementById('app') })
 
 // Enable the service worker in production
 if (process.env.NODE_ENV === 'production') {

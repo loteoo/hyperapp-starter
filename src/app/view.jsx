@@ -12,7 +12,7 @@ const container = {
 
 // Root view
 export default state => (
-  <main className={container}>
+  <main style={container}>
     <h1>{state.title}</h1>
     <p>{state.description}</p>
     <input
