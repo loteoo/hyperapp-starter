@@ -30,14 +30,14 @@ npm run build   # Build for production and generate service worker
 Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/master.zip)
 
  
-## Overview
+## Features
 - Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
-- [Hygen](https://www.hygen.io/) code generators are included for common use cases. (More to come!)  
 - Works offline out of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers and precache application files
-- PWA/SPA ready with a default web app manifest
 - Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
 - Uses the [Standard](https://standardjs.com/) JavaScript style guide with eslint  
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go with automatic import of the `h` function
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go with automatic import of the `h` function (say goodbye to that `h` import!)
+- [Hygen](https://www.hygen.io/) code generators are included for common use cases. (More to come!)  
+- PWA/SPA ready with a default web app manifest
 - All of the ES6-7-8-9 goodies ready to use thanks to Parcel.
 
 
@@ -77,7 +77,7 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 
 
 ## Code generators
-(TODO: use enquirer to ask questions and generate the corresponding component)
+(TODO: use enquirer to ask questions and generate the corresponding component)  
 Generate new Hyperapp components like this:
 ```
 hygen component new --name 'component name'
