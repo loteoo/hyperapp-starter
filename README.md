@@ -17,9 +17,12 @@ git clone https://github.com/loteoo/hyperapp-boilerplate.git
 
 cd hyperapp-boilerplate
 
-npm install     # Install dependencies
-npm start       # Dev server + live reload
+npm run init-git    # Clean commit history
+
+npm install         # Install dependencies
+npm start           # Dev server + live reload
 ```
+> you can also [clean the commit history](#clean-commit-history)
 
 ```
 npm run build   # Build for production and generate service worker
@@ -86,7 +89,7 @@ Available generators are located in the _templates folder. Feel free to add some
 http://www.hygen.io/
 
 
-
+---  
 
 
 ### Hyperapp 2.0 TLDR:
