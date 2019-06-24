@@ -11,11 +11,7 @@ Ready-to-go Hyperapp PWA/SPA starter template
 
 
 ## 🚀 Quick start: 
-Click here:  
-<a class="btn btn-sm btn-primary ml-2" href="/loteoo/hyperapp-boilerplate/generate">Use this template</a>
-
-OR
-
+[Create a new repository from this template](https://github.com/loteoo/hyperapp-boilerplate/generate), or run these commands:  
 ```
 # Clone project
 git clone https://github.com/loteoo/hyperapp-boilerplate.git
