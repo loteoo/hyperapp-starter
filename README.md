@@ -7,7 +7,7 @@
   Hyperapp 2.0 boilerplate
 </h1>
 
-Ready-to-go Hyperapp PWA/SPA starter template  
+Starter template to quickly build a Progressive Web App / Single Page App using Hyperapp with a modern configuration and best-practices in mind.  
 
 
 ## 🚀 Quick start: 
@@ -33,10 +33,10 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/
 - Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
 - Works offline out of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers and precache application files
 - PWA/SPA ready with a default web app manifest
-- Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
+- Sane CSS defaults using [sanitize.css](https://csstools.github.io/sanitize.css/), a best-practices CSS reset
 - Uses the [Standard](https://standardjs.com/) JavaScript style guide with eslint  
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go with automatic import of the `h` function (say goodbye to that `h` import!)
-- All of the ES6-7-8-9 goodies ready to use thanks to Parcel.
+-  Automatic import of the `h` function (say goodbye to that `h` import!)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) and all of the ES6-7-8-9 goodies are ready to go thanks to Parcel.
 
 
 ## File structure
