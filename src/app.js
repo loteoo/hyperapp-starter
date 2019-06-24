@@ -1,6 +1,6 @@
 import { app } from 'hyperapp'
 
-// Import best-practices defaults
+// Import best-practices css defaults
 import 'sanitize.css'
 import 'sanitize.css/typography.css'
 import 'sanitize.css/forms.css'
@@ -8,11 +8,11 @@ import 'sanitize.css/forms.css'
 // Global styling
 import './global.css'
 
-// Import app
+// App init imports
 import init from './app/init'
 import view from './app/view'
 
-// Initialize the app
+// Initialize the app on the #app div
 app({ init, view, node: document.getElementById('app') })
 
 // Enable the service worker when running the build command
