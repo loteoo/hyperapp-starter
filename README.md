@@ -40,7 +40,6 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/
 - Sane CSS defaults and reset with [sanitize.css](https://csstools.github.io/sanitize.css/)
 - Uses the [Standard](https://standardjs.com/) JavaScript style guide with eslint  
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go with automatic import of the `h` function (say goodbye to that `h` import!)
-- [Hygen](https://www.hygen.io/) code generators are included for common use cases. (More to come!)  
 - All of the ES6-7-8-9 goodies ready to use thanks to Parcel.
 
 
@@ -48,7 +47,6 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/
 Proposed folder structure as your project grows. Adapt it to your needs.  
 
 ```
-├── _templates/                       # Hygen code generators
 ├── dist/                             # Compiled static files (parcel output)
 ├── src/                              # Application source code
 │   ├── app/                          # App files
@@ -79,18 +77,8 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 
 
 
-## Code generators
-(TODO: use enquirer to ask questions and generate the corresponding component)  
-Generate new Hyperapp components like this:
-```
-hygen component new --name 'component name'
-hygen page new --name 'page name'
-```
-Available generators are located in the _templates folder. Feel free to add some more or change the existing ones!
 
  
-http://www.hygen.io/
-
 
 
 ## Clean the commit history
