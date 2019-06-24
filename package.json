@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "hyperapp": "^2.0.0-beta.22",
-    "sanitize.css": "^8.0.1"
+    "sanitize.css": "^10.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",
