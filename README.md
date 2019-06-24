@@ -7,7 +7,7 @@
   Hyperapp 2.0 boilerplate
 </h1>
 
-Starter template to quickly build a Progressive Web App / Single Page App using Hyperapp with a modern configuration and best-practices in mind.  
+Starter template to quickly build front-ends using Hyperapp with a modern configuration and best-practices in mind.  
 
 
 ## 🚀 Quick start: 
