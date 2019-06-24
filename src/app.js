@@ -4,7 +4,6 @@ import { app } from 'hyperapp'
 import 'sanitize.css'
 import 'sanitize.css/typography.css'
 import 'sanitize.css/forms.css'
-import 'sanitize.css/page.css'
 
 // Global styling
 import './global.css'
