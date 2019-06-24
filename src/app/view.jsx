@@ -1,31 +1,19 @@
+import { SetA, SetB } from './actions'
 
-// Import actions
-import { SetValue } from './actions'
-
-const targetValue = event => event.target.value
+const decodeInput = event => parseInt(event.target.value || 0)
 
 const container = {
-  maxWidth: '1024px',
-  margin: '0 auto',
-  padding: '1rem'
+  maxWidth: '768px',
+  margin: '3rem auto'
 }
 
-// Root view
+// Root application view
 export default state => (
   <main style={container}>
-    <h1>{state.title}</h1>
-    <p>{state.description}</p>
-    <input
-      type="text"
-      value={state.title}
-      oninput={[SetValue, ev => ({ key: 'title', value: targetValue(ev) })]}
-    />
-    <input
-      type="text"
-      value={state.description}
-      oninput={[SetValue, ev => ({ key: 'description', value: targetValue(ev) })]}
-    />
-    <h4>State: </h4>
-    <pre>{JSON.stringify(state, null, 2)}</pre>
+    <h1>Do more with less</h1>
+    <input type="number" value={state.a} oninput={[SetA, decodeInput]} />
+    <input type="number" value={state.b} oninput={[SetB, decodeInput]} />
+    <h2>{state.a} + {state.b} = {state.a + state.b}</h2>
+    <pre><code>state: {JSON.stringify(state, null, 2)}</code></pre>
   </main>
 )

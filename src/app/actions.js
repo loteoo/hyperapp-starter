@@ -1,9 +1,3 @@
-// ==================
-// Global actions
-// ==================
-
-// Sets a value to the given key in the state
-export const SetValue = (state, {key, value}) => ({
-  ...state,
-  [key]: value
-})
+// State transitions
+export const SetA = (state, a) => ({ ...state, a })
+export const SetB = (state, b) => ({ ...state, b })

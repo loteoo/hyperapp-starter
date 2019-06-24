@@ -7,19 +7,14 @@
 	--background-color: #ffffff;
 	--alt-background-color: #f4f4f4;
 	--text-color: #121212;
-  --accent-color: #4641FF;
+  --accent-color: #0000FF;
   --border-color: #eeeeee;
   --success-color: #06d19c;
   --danger-color: tomato;
-  --system-font: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
 }
 
 /* === Default cascade === */
 html {
-  font-family: var(--system-font);
   color: var(--text-color);
   background-color: var(--background-color);
   scroll-behavior: smooth;
@@ -33,4 +28,16 @@ body {
 ::selection {
 	background: var(--accent-color);
 	color: var(--background-color);
+}
+
+code {
+  display: inline-block;
+  background-color: var(--alt-background-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+pre code {
+  display: block;
+  padding: 1rem;
 }
