@@ -11,7 +11,7 @@ Ready-to-go Hyperapp PWA/SPA starter template
 
 
 ## 🚀 Quick start: 
-[Create a new repository from this template](https://github.com/loteoo/hyperapp-boilerplate/generate), or run these commands:  
+[Click here to use this template](https://github.com/loteoo/hyperapp-boilerplate/generate), or run these commands:  
 ```
 # Clone project
 git clone https://github.com/loteoo/hyperapp-boilerplate.git
@@ -28,7 +28,7 @@ npm run build   # Build for production and generate service worker
 ```
 Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/master.zip)
 
- 
+
 ## Features
 - Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
 - Works offline out of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers and precache application files
@@ -47,7 +47,6 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 ├── src/                              # Application source code
 │   ├── app/                          # App files
 │   │   ├── pages/                    # Pages are top level components, triggered by a router
-│   │   ├── theme/                    # Small, utility components, ex: text input, modal container, etc.
 │   │   ├── components/               # Hyperapp components
 │   │   │   ├── {ComponentName}/      # Advanced component with multiple files
 │   │   │   │   ├── actions.js        # Local actions
@@ -63,7 +62,7 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   ├── assets/                       # Global application assets (favicon, fonts...)
 │   ├── app.js                        # Hyperapp instantiation
 │   ├── global.css                    # Global styles
-│   ├── index.html                    # Parcel entry & html frame
+│   ├── index.html                    # Parcel entry
 │   └── manifest.webmanifest          # Web app manifest
 ├── static/                           # Files to be copied in dist folder
 ├── ...
@@ -74,15 +73,9 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 
 
 
- 
-
-
-## Clean the commit history
-If you `git clone`d the project, you can reset the commit history by running this command in the project:
-```
-npm run reset-git
-```
 ---  
+
+
 
 
 ### Hyperapp 2.0 TLDR:
@@ -106,17 +99,20 @@ Basic CRUD actions with hyperapp 2.0
 https://github.com/loteoo/hyperapp-todolist
 
 
-Pull requests are welcome!
+
 
 ### FAQ:
 
-> Why so many commits?  
+> How do I deploy my app?
+By default, apps using this boilerplate can be considered *static sites*, which means you can deploy for free on services like Netlify and Github Pages.
 
-The boilerplate has evolved and changed a lot over time.
+> Why so many commits?
+Even is there are not that many files in this boilerplate, it's configuration has been meticulously though over and over to make sure you hit the ground running and focus on your idea.
 
+> I'm concerned about 
 
 ---  
 
 
-https://github.com/loteoo/hyperapp-boilerplate
+
 
