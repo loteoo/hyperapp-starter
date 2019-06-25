@@ -30,6 +30,15 @@ body {
 	color: var(--background-color);
 }
 
+iframe,
+img,
+input,
+select,
+textarea {
+  height: auto;
+  max-width: 100%;
+}
+
 code {
   display: inline-block;
   background-color: var(--alt-background-color);
