@@ -89,10 +89,10 @@ https://github.com/loteoo/hyperapp-todolist
 
 ### FAQ:
 
-> How do I deploy my app?
+> How do I deploy my app?   
 By default, apps using this boilerplate can be considered *static sites*, which means you can deploy for free on services like Netlify and Github Pages.
 
-> Why so many commits?
+> Why so many commits?   
 Even is there are not that many files in this boilerplate, it's configuration has been meticulously though over and over to make sure you hit the ground running and focus on your idea.
 
 
