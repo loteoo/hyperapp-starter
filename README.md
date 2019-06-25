@@ -96,6 +96,12 @@ By default, apps using this boilerplate can be considered *static sites*, which 
 Even is there are not that many files in this boilerplate, it's configuration has been meticulously though over and over to make sure you hit the ground running and focus on your idea.
 
 
+### Need routing, code splitting and pre-rendering out of the box?   
+
+Use [this](https://github.com/loteoo/hyperapp-site-generator-starter) instead!
+
+
+
 ---  
 
 
