@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/jorgebucaran/hyperapp">
-    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-boilerplate/master/src/assets/icon-180x180.png" width="80" />
+    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-boilerplate/master/static/icon-180x180.png" width="80" />
   </a>
 </p>
 <h1 align="center">
@@ -69,7 +69,8 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 ...
 ```
 
-
+## Live preview
+https://hyperapp-starter.netlify.com/
 
 
 
