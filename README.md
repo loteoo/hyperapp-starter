@@ -70,7 +70,7 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 ```
 
 ## Live preview
-https://hyperapp-starter.netlify.com/
+https://hyperapp-boilerplate-demo.netlify.com/
 
 
 
