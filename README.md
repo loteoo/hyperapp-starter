@@ -59,7 +59,6 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 │   │   ├── init.js                   # Initial app state
 │   │   ├── utils.js                  # Misc utility functions
 │   │   └── view.jsx                  # Root view
-│   ├── assets/                       # Global application assets (favicon, fonts...)
 │   ├── app.js                        # Hyperapp instantiation
 │   ├── global.css                    # Global styles
 │   ├── index.html                    # Parcel entry
