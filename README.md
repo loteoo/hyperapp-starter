@@ -39,7 +39,7 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/mast
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) and all of the ES6-7-8-9 goodies are ready to go thanks to Parcel.
 
 
-## File structure
+## Sample file structure
 Proposed folder structure as your project grows. Adapt it to your needs.  
 
 ```
