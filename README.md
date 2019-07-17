@@ -1,22 +1,22 @@
 <p align="center">
   <a href="https://github.com/jorgebucaran/hyperapp">
-    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-boilerplate/master/static/icon-180x180.png" width="80" />
+    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-starter/master/static/icon-180x180.png" width="80" />
   </a>
 </p>
 <h1 align="center">
-  Hyperapp 2.0 boilerplate
+  Hyperapp 2.0 starter
 </h1>
 
 Starter template to quickly build front-ends using Hyperapp with a modern configuration and best-practices in mind.  
 
 
 ## 🚀 Quick start: 
-[Click here to use this template](https://github.com/loteoo/hyperapp-boilerplate/generate), or run these commands:  
+[Click here to use this template](https://github.com/loteoo/hyperapp-starter/generate), or run these commands:  
 ```
 # Clone project
-git clone https://github.com/loteoo/hyperapp-boilerplate.git
+git clone https://github.com/loteoo/hyperapp-starter.git
 
-cd hyperapp-boilerplate
+cd hyperapp-starter
 
 npm install         # Install dependencies
 npm start           # Dev server + live reload
@@ -26,7 +26,7 @@ npm start           # Dev server + live reload
 ```
 npm run build   # Build for production and generate service worker
 ```
-Or use a [.zip download](https://github.com/loteoo/hyperapp-boilerplate/archive/master.zip)
+Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/master.zip)
 
 
 ## Features
@@ -69,7 +69,7 @@ Proposed folder structure as your project grows. Adapt it to your needs.
 ```
 
 ## Live preview
-https://hyperapp-boilerplate-demo.netlify.com/
+https://hyperapp-starter-demo.netlify.com/
 
 
 
@@ -91,11 +91,11 @@ https://github.com/loteoo/hyperapp-todolist
 
 > How do I deploy my app?   
 
-By default, apps using this boilerplate can be considered *static sites*, which means you can deploy for free on services like Netlify and Github Pages.
+By default, apps using this starter can be considered *static sites*, which means you can deploy for free on services like Netlify and Github Pages.
 
 > Why so many commits?   
 
-Even is there are not that many files in this boilerplate, it's configuration has been meticulously though over and over to make sure you hit the ground running and focus on your idea.
+Even is there are not that many files in this starter, it's configuration has been meticulously though over and over to make sure you hit the ground running and focus on your idea.
 
 
 ### Need routing, code splitting and pre-rendering out of the box?   

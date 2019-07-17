@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "name": "hyperapp-boilerplate",
-  "description": "Hyperapp PWA boilerplate",
+  "name": "hyperapp-starter",
+  "description": "Hyperapp PWA starter",
   "author": "Alexandre Lotte",
   "license": "MIT",
   "scripts": {

@@ -1,7 +1,7 @@
 {
   "short_name": "Hyperapp",
-  "name": "Hyperapp boilerplate",
-  "description": "Hyperapp starter kit with development on steroids",
+  "name": "Hyperapp starter",
+  "description": "Hyperapp starter with a modern configuration and best-practices in mind.",
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
