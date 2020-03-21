@@ -1,121 +1,26 @@
-############################
-# OS X
-############################
-
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-.Spotlight-V100
-.Trashes
-._*
-
-
-############################
-# Linux
-############################
-
-*~
-
-
-############################
-# Windows
-############################
-
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msm
-*.msp
-
-
-############################
-# Packages
-############################
-
-*.7z
-*.csv
-*.dat
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.seed
-*.so
-*.swo
-*.swp
-*.swn
-*.swm
-*.out
-*.pid
-
-
-############################
-# Logs and databases
-############################
-
-.tmp
-*.log
-*.sql
-*.sqlite
-*.sqlite3
-
-
-############################
-# Misc.
-############################
-
-*#
-ssl
-.idea
-nbproject
-
-
-############################
-# Node.js
-############################
-
-lib-cov
-lcov.info
-pids
+# Logs
 logs
-results
-node_modules
-.node_history
+*.log
+npm-debug.log*
 
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-############################
-# Tests
-############################
+# Dependency directories
+node_modules/
 
-testApp
-coverage
+# Output of 'npm pack'
+*.tgz
 
-
-
-############################
-# Parcel
-############################
-
-dist
-public
-*cache
-
-
-
-############################
-# Env
-############################
-
+# dotenv environment variables file
 .env
+
+# Mac files
+.DS_Store
+
+# Parcel
+.cache/
+dist

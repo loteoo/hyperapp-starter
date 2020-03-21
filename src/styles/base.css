@@ -1,0 +1,164 @@
+/*------------------------------------*\
+  Base CSS - Embrace the cascade
+\*------------------------------------*/
+
+/* === Start from well known, best-practices CSS defaults === */
+@import 'sanitize.css';
+@import 'sanitize.css/typography.css';
+@import 'sanitize.css/forms.css';
+
+/* === Global variables === */
+:root {
+	--background-color: #ffffff;
+	--alt-background-color: #f4f4f4;
+	--text-color: #121212;
+  --accent-color: #0000FF;
+}
+
+/* === Default cascade === */
+html {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+}
+
+/* === Opionated tweaks === */
+html,
+body {
+  position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::selection {
+	background: var(--accent-color);
+	color: var(--background-color);
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--text-color);
+}
+
+img,
+video,
+iframe,
+input,
+select,
+textarea {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* === Typography === */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+}
+h2, .h2 {
+  font-size: 1.5rem;
+}
+h3, .h3 {
+  font-size: 1.17rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+}
+h5, .h5 {
+  font-size: 0.83rem;
+}
+h6, .h6 {
+  font-size: 0.67rem;
+}
+
+p, .paragraph {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+a, .link {
+  text-decoration: underline;
+  color: inherit;
+}
+
+
+
+/* === Buttons === */
+button, .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+  &.outlined {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+}
+
+
+
+/* === Forms === */
+input:not([type="radio"]):not([type="checkbox"]):not([type="color"]),
+select,
+textarea {
+  display: block;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  &:focus {
+    box-shadow: none;
+    border-color: var(--text-color);
+  }
+}
+
+textarea {
+  min-height: 2.625rem;
+}
+
+select {
+  padding-right: 1.25rem;
+}
+
+
+
+/* === Misc === */
+code {
+  display: inline-block;
+  background-color: var(--alt-background-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+pre code {
+  display: block;
+  padding: 1rem;
+}
+
+hr {
+  margin: 1rem 0;
+  border: none;
+  height: 1px;
+  background-color: currentColor;
+}

@@ -1,0 +1,47 @@
+/*------------------------------------*\
+  Shared utility classes
+\*------------------------------------*/
+
+/* Max-width container */
+.container {
+  width: 90vw;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Responsive grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Stack horizontally with a space */
+.row {
+  @media (max-width: 420px) {
+    display: flex;
+    margin: 1rem 0;
+    > * {
+      margin: 0;
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Common styles for "card" like elements */
+.card {
+  color: var(--text-color);
+  background-color: var(--alt-background-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  > *:first-child {
+    margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
