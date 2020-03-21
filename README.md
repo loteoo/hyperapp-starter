@@ -53,6 +53,7 @@ https://hyperapp-starter-demo.netlify.com/
 
 ### CSS modules typings  
 To enable go in any JS file, open the command palette, type `> Select TypeScript Version`, pick `Use Workspace Version`  
+
 ![css-modules gif](https://user-images.githubusercontent.com/14101189/77218994-bdb63700-6b07-11ea-9ce5-efd8e84007c8.gif)
 
 ---
