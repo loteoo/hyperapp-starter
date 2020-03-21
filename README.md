@@ -1,10 +1,10 @@
 <p align="center">
   <a href="https://github.com/jorgebucaran/hyperapp">
-    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-starter/master/static/icon-180x180.png" width="80" />
+    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-starter/master/src/assets/icon-180x180.png" width="80" />
   </a>
 </p>
 <h1 align="center">
-  Hyperapp 2.0 starter
+  Hyperapp starter
 </h1>
 
 Starter template to quickly build front-ends using Hyperapp with a modern configuration and best-practices in mind.  
@@ -30,43 +30,17 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/mast
 
 
 ## Features
-- Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading.  (It's  blazing fast, easy to use and reliable)
-- Works offline out of the box using [workbox](https://developers.google.com/web/tools/workbox/) to generate service workers and precache application files
-- PWA/SPA ready with a default web app manifest
-- Sane CSS defaults using [sanitize.css](https://csstools.github.io/sanitize.css/), a best-practices CSS reset
-- Uses the [Standard](https://standardjs.com/) JavaScript style guide with eslint  
+- Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading
+- CSS Modules with auto-completion of CSS classe names
+- Smart CSS defaults on top of [sanitize.css](https://csstools.github.io/sanitize.css/)
+- [Standard](https://standardjs.com/) JavaScript style guide with a11y and prettier linting
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go
 -  Automatic import of the `h` function (say goodbye to that `h` import!)
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) and all of the ES6-7-8-9 goodies are ready to go thanks to Parcel.
+- Absolute imports (say goodbye to the `../../` hell)
+- Type hinting and intellisense without typescript yourself, thanks to the `jsconfig.json` file.
+- PWA/SPA ready with a default web app manifest
 
 
-## Sample file structure
-Proposed folder structure as your project grows. Adapt it to your needs.  
-
-```
-├── dist/                             # Compiled static files (parcel output)
-├── src/                              # Application source code
-│   ├── app/                          # App files
-│   │   ├── pages/                    # Pages are top level components, triggered by a router
-│   │   ├── components/               # Hyperapp components
-│   │   │   ├── {ComponentName}/      # Advanced component with multiple files
-│   │   │   │   ├── actions.js        # Local actions
-│   │   │   │   ├── index.jsx         # Exported view
-│   │   │   │   ├── init.js           # Initial local state
-│   │   │   │   ├── style.css         # Component styles
-│   │   │   │   └── other.svg         # Other related files (which are only used by the component)
-│   │   │   └── {ComponentName}.jsx   # Single file component
-│   │   ├── actions.js                # Global actions
-│   │   ├── init.js                   # Initial app state
-│   │   ├── utils.js                  # Misc utility functions
-│   │   └── view.jsx                  # Root view
-│   ├── app.js                        # Hyperapp instantiation
-│   ├── global.css                    # Global styles
-│   ├── index.html                    # Parcel entry
-│   └── manifest.webmanifest          # Web app manifest
-├── static/                           # Files to be copied in dist folder
-├── ...
-...
-```
 
 ## Live preview
 https://hyperapp-starter-demo.netlify.com/
@@ -74,9 +48,6 @@ https://hyperapp-starter-demo.netlify.com/
 
 
 ---  
-
-
-
 
 
 
@@ -93,15 +64,11 @@ https://github.com/loteoo/hyperapp-todolist
 
 By default, apps using this starter can be considered *static sites*, which means you can deploy for free on services like Netlify and Github Pages.
 
-> Why so many commits?   
-
-Even is there are not that many files in this starter, it's configuration has been meticulously though over and over to make sure you hit the ground running and focus on your idea.
 
 
 ### Need routing, code splitting and pre-rendering out of the box?   
 
-Use [this](https://github.com/loteoo/hyperapp-site-generator-starter) instead!
-
+Use [this](https://github.com/loteoo/hyperstatic-starter) instead!
 
 
 ---  
