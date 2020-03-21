@@ -19,7 +19,7 @@
 
 /* Stack horizontally with a space */
 .row {
-  @media (max-width: 420px) {
+  @media (min-width: 420px) {
     display: flex;
     margin: 1rem 0;
     > * {
