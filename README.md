@@ -30,16 +30,20 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/mast
 
 
 ## Features
-- Uses [Parcel](https://parceljs.org/) for compilation, dev server and hot module reloading
-- CSS Modules with auto-completion of CSS classe names
+- [Parcel](https://parceljs.org/) for dev tooling
+- CSS Modules
 - Smart CSS defaults on top of [sanitize.css](https://csstools.github.io/sanitize.css/)
 - [Standard](https://standardjs.com/) JavaScript style guide with a11y and prettier linting
-- [JSX](https://reactjs.org/docs/introducing-jsx.html) is ready to go
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) ready to go
 -  Automatic import of the `h` function (say goodbye to that `h` import!)
 - Absolute imports (say goodbye to the `../../` hell)
-- Type hinting and intellisense without typescript yourself, thanks to the `jsconfig.json` file.
+- Type hinting and intellisense without typescript, thanks to the `jsconfig.json` file.
 - PWA/SPA ready with a default web app manifest
 
+![intellisense gif](https://user-images.githubusercontent.com/14101189/77218995-be4ecd80-6b07-11ea-84d2-75c3ec318b78.gif)
+
+For CSS Modules autocompletion, go in any JS file, open the command palette, type `> Select TypeScript Version`, pick `Use Workspace Version`
+![css-modules gif](https://user-images.githubusercontent.com/14101189/77218994-bdb63700-6b07-11ea-9ce5-efd8e84007c8.gif)
 
 
 ## Live preview
