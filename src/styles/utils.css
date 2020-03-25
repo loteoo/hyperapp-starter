@@ -37,6 +37,7 @@
   background-color: var(--alt-background-color);
   border-radius: 1rem;
   padding: 1rem;
+  text-decoration: none;
   > *:first-child {
     margin-top: 0;
   }
