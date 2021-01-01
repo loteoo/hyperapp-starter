@@ -1,11 +1,18 @@
 {
   "compilerOptions": {
-    "checkJs": true,
-    "jsx": "preserve",
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "/*": ["src/*"],
+      "/*": ["./src/*"]
     },
+    "jsx": "react-jsx",
+    "jsxImportSource": "/utils/jsx",
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true,
     "plugins": [
       { // See https://github.com/mrmckeb/typescript-plugin-css-modules for more options
         "name": "typescript-plugin-css-modules",
@@ -20,5 +27,5 @@
     "index.d.ts",
     "src/**/*"
   ],
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".cache", "dist"]
 }

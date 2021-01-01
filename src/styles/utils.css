@@ -2,14 +2,14 @@
   Shared utility classes
 \*------------------------------------*/
 
-/* Max-width container */
+/* Max-width containers */
 .container {
-  width: 90vw;
-  max-width: 480px;
+  width: 100%;
+  max-width: min(480px, 90vw);
   margin: 0 auto;
 }
 
-/* Responsive grid */
+/* Responsive Card grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -17,32 +17,14 @@
   margin: 1rem 0;
 }
 
-/* Stack horizontally with a space */
-.row {
-  @media (min-width: 420px) {
-    display: flex;
-    margin: 1rem 0;
-    > * {
-      margin: 0;
-      &:not(:last-child) {
-        margin-right: 0.5rem;
-      }
-    }
-  }
-}
-
-/* Common styles for "card" like elements */
-.card {
-  color: var(--text-color);
+/* Bring attention to some content */
+.callout {
+  padding: 1em;
+  margin: 1rem 0;
   background-color: var(--alt-background-color);
-  border-radius: 1rem;
-  padding: 1rem;
-  text-decoration: none;
-  > *:first-child {
-    margin-top: 0;
-  }
-  > *:last-child {
-    margin-bottom: 0;
+  border-radius: 0.25rem;
+  > span[role='img'] {
+    display: inline-block;
+    margin-right: 0.8em;
   }
 }
-

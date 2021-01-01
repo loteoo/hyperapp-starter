@@ -5,55 +5,17 @@
   "author": "Alexandre Lotte <dev@alexlotte.ca>",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --no-source-maps --detailed-report",
-    "lint": "eslint \"./src/**/*.{js,jsx}\" --fix",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "build": "parcel build src/index.html --no-source-maps --detailed-report"
   },
   "dependencies": {
-    "hyperapp": "^2.0.4",
-    "sanitize.css": "^11.0.0"
+    "hyperapp": "^2.0.8",
+    "sanitize.css": "^12.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-jsx-pragmatic": "^1.0.2",
-    "eslint": "^6.7.2",
-    "eslint-config-babel": "^9.0.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^9.2.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-standard": "^4.0.1",
     "parcel": "^1.12.4",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.3.1",
     "postcss-modules": "^1.5.0",
     "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^1.19.1",
-    "typescript": "^3.8.3",
-    "typescript-plugin-css-modules": "^2.2.0"
-  },
-  "babel": {
-    "plugins": [
-      [
-        "babel-plugin-jsx-pragmatic",
-        {
-          "module": "hyperapp",
-          "import": "h",
-          "export": "h"
-        }
-      ]
-    ]
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/loteoo/react-parcel-starter"
+    "typescript": "^4.1.3"
   }
 }
