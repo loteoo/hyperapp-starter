@@ -30,6 +30,7 @@ Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/mast
 
 
 ## Features
+- [Typescript](https://www.typescriptlang.org/)
 - [Parcel](https://parceljs.org/) for dev tooling
 - CSS Modules
 - Smart CSS defaults on top of [sanitize.css](https://csstools.github.io/sanitize.css/)
