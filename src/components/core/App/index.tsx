@@ -4,10 +4,10 @@ import Header from '/components/core/Header'
 import Router from '/components/core/Router'
 import Footer from '/components/core/Footer'
 
-const App = () => (
+const App = (state) => (
   <main>
     <Header />
-    <Router />
+    <Router {...state} />
     <Footer />
   </main>
 )

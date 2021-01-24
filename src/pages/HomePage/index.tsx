@@ -7,7 +7,7 @@ export const initialState = {
   b: 2
 }
 
-const HomePage = () => (state) => (
+const HomePage = (state) => (
   <div class={utils.container}>
     <h1>Parcel + hyperapp = 💖</h1>
     <div class={utils.grid}>
