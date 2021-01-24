@@ -75,9 +75,9 @@ By default, apps using this starter can be considered *static sites*, which mean
 
 
 
-### Need routing, code splitting and pre-rendering out of the box?   
+### Need code splitting and pre-rendering out of the box?
 
-Use [this](https://github.com/loteoo/hyperstatic-starter) instead!
+Checkout [hyperstatic](https://github.com/loteoo/hyperstatic) and the [hyperstatic starter](https://github.com/loteoo/hyperstatic-starter) instead!
 
 
 ---  
