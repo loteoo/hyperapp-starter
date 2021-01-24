@@ -7,14 +7,15 @@ import withLocation from './utils/routing/withLocation'
 import App from '/components/core/App'
 
 // Data for initial state
-import { initialState as homeInitialState } from '/pages/HomePage'
+import { init as homeInit } from '/pages/HomePage'
+import { init as counterInit } from '/pages/CounterPage'
 
 // Global styles
 import '/styles/base.css'
 
 // Initialize the app on the #app div
 withLocation(app)({
-  init: { ...homeInitialState },
+  init: { ...homeInit, ...counterInit },
   view: App,
   node: document.getElementById('app')
 })

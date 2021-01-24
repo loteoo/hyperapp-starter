@@ -6,7 +6,7 @@ import styles from './logo.css'
 
 const Logo = () => (
   <Link href="/" class={styles.logo}>
-    <img src={logo} alt="Main logo" />
+    <img src={logo} alt="Main logo" width="32" height="32" />
   </Link>
 )
 

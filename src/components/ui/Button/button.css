@@ -1,0 +1,7 @@
+.button {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  & + & {
+      margin-left: 0.5rem;
+  }
+}

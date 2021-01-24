@@ -9,6 +9,7 @@ const Header = () => (
     <div class={[utils.container, styles.inner]}>
       <Logo />
       <Link href="/secondary">Secondary page</Link>
+      <Link href="/counter">Counter page</Link>
     </div>
   </header>
 )

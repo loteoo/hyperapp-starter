@@ -4,4 +4,10 @@
 .inner {
   display: flex;
   align-items: center;
+  a:first-child {
+    margin-right: auto;
+  }
+  a:not(:first-child) {
+    margin-left: 1rem;
+  }
 }
