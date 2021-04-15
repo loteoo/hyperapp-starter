@@ -1,4 +1,4 @@
-import styles from './input.css'
+import styles from './input.module.css'
 
 const Input = ({ type = 'text', ...rest }) => (
   <input class={styles.input} type={type} {...rest} />

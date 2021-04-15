@@ -1,4 +1,4 @@
-import fx from '/utils/fx'
+import fx from '/src/utils/fx'
 
 export const onRouteChanged = fx((dispatch, action) => {
   const handleLocationChange = () => {

@@ -1,6 +1,6 @@
-import Button from '/components/ui/Button'
+import Button from '/src/components/ui/Button'
 
-import utils from '/styles/utils.css'
+import utils from '/src/styles/utils.module.css'
 
 // Initial state
 export const init = {

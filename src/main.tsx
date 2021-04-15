@@ -4,14 +4,14 @@ import { app } from 'hyperapp'
 import withLocation from './utils/routing/withLocation'
 
 // Root view
-import App from '/components/core/App'
+import App from '/src/components/core/App'
 
 // Data for initial state
-import { init as homeInit } from '/pages/HomePage'
-import { init as counterInit } from '/pages/CounterPage'
+import { init as homeInit } from '/src/pages/HomePage'
+import { init as counterInit } from '/src/pages/CounterPage'
 
 // Global styles
-import '/styles/base.css'
+import '/src/styles/base.module.css'
 
 // Initialize the app on the #app div
 withLocation(app)({

@@ -6,22 +6,12 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "/*": ["./src/*"]
+      "/*": ["./*"]
     },
-    "jsx": "react-jsx",
-    "jsxImportSource": "/utils/jsx",
+    "jsx": "preserve",
     "checkJs": true,
     "allowJs": true,
-    "noEmit": true,
-    "plugins": [
-      { // See https://github.com/mrmckeb/typescript-plugin-css-modules for more options
-        "name": "typescript-plugin-css-modules",
-        "options": {
-          "classnameTransform": "camelCaseOnly",
-          "customMatcher": "\\.(c|le|sa|sc)ss$"
-        }
-      }
-    ]
+    "noEmit": true
   },
   "include": [
     "index.d.ts",

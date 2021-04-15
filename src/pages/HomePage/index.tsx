@@ -1,5 +1,5 @@
-import Input from '/components/ui/Input'
-import utils from '/styles/utils.css'
+import Input from '/src/components/ui/Input'
+import utils from '/src/styles/utils.module.css'
 
 // Initial state
 export const init = {
@@ -14,7 +14,7 @@ const SetB = (state, ev) => ({ ...state, b: Number(ev.target.value) })
 // View
 const HomePage = (state) => (
   <div class={utils.container}>
-    <h1>Parcel + hyperapp = 💖</h1>
+    <h1>👋 Welcome to hyperapp</h1>
     <div class={utils.grid}>
       <Input type="number" name="a" value={state.a} onchange={SetA} />
       <Input type="number" name="b" value={state.b} onchange={SetB} />

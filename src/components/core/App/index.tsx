@@ -1,8 +1,6 @@
-import '/styles/base.css'
-
-import Header from '/components/core/Header'
-import Router from '/components/core/Router'
-import Footer from '/components/core/Footer'
+import Header from '/src/components/core/Header'
+import Router from '/src/components/core/Router'
+import Footer from '/src/components/core/Footer'
 
 const App = (state) => (
   <main>

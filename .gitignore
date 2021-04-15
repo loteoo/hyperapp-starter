@@ -21,7 +21,5 @@ node_modules/
 # Mac files
 .DS_Store
 
-# Parcel
-.cache/
+# Build output
 dist
-.parcel-cache

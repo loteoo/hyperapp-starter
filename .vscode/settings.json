@@ -1,7 +1,6 @@
 {
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "javascript.implicitProjectConfig.checkJs": true,
   "files.associations": {
-    "*.css": "scss"
+    "*.module.css": "scss"
   }
 }

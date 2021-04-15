@@ -1,5 +1,5 @@
-import utils from '/styles/utils.css'
-import styles from './footer.css'
+import utils from '/src/styles/utils.module.css'
+import styles from './footer.module.css'
 
 const Footer = () => (
   <footer class={styles.footer}>

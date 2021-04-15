@@ -1,7 +1,7 @@
-import HomePage from '/pages/HomePage'
-import SecondaryPage from '/pages/SecondaryPage'
-import CounterPage from '/pages/CounterPage'
-import NotFoundPage from '/pages/NotFoundPage'
+import HomePage from '/src/pages/HomePage'
+import SecondaryPage from '/src/pages/SecondaryPage'
+import CounterPage from '/src/pages/CounterPage'
+import NotFoundPage from '/src/pages/NotFoundPage'
 
 const Router = (state) => {
   if (state.location.path === '/') {

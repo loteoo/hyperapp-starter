@@ -18,47 +18,36 @@ git clone https://github.com/loteoo/hyperapp-starter.git
 
 cd hyperapp-starter
 
-npm install         # Install dependencies
-npm start           # Dev server + live reload
+npm i               # Install dependencies
+npm run dev         # Dev server
 ```
 
 
 ```
-npm run build   # Build for production and generate service worker
+npm run build       # Build for production
+npm run preview     # Preview production build
 ```
+
 Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/master.zip)
 
 
 ## Features
-- [Typescript](https://www.typescriptlang.org/)
-- [Parcel](https://parceljs.org/) for dev tooling
-- CSS Modules
+
+- [Vite](https://vitejs.dev/) for dev tooling
+- Written in TypeScript
+- CSS modules + nested syntax
 - Smart CSS defaults on top of [sanitize.css](https://csstools.github.io/sanitize.css/)
-- [Standard](https://standardjs.com/) JavaScript style guide with a11y and prettier linting
 - [JSX](https://reactjs.org/docs/introducing-jsx.html) ready to go
--  Automatic import of the `h` function (say goodbye to that `h` import!)
 - Absolute imports (say goodbye to the `../../` hell)
-- Type hinting and intellisense without typescript, thanks to the `jsconfig.json` file.
 - PWA/SPA ready with a default web app manifest
+- Pages + routing implementation
 
 
-## Live preview
+## Live demo
 https://hyperapp-starter-demo.netlify.com/
 
 
-
----  
-
-### Absolute imports & intellisense  
-![intellisense gif](https://user-images.githubusercontent.com/14101189/77218995-be4ecd80-6b07-11ea-84d2-75c3ec318b78.gif)  
-
-### CSS modules typings  
-To enable go in any JS file, open the command palette, type `> Select TypeScript Version`, pick `Use Workspace Version`  
-
-![css-modules gif](https://user-images.githubusercontent.com/14101189/77218994-bdb63700-6b07-11ea-9ce5-efd8e84007c8.gif)
-
 ---
-
 
 ### To-do list demo app:
 Basic CRUD actions with hyperapp 2.0  

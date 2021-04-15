@@ -1,6 +1,6 @@
-import Link from '/utils/routing/Link'
+import Link from '/src/utils/routing/Link'
 
-import utils from '/styles/utils.css'
+import utils from '/src/styles/utils.module.css'
 
 const NotFoundPage = () => (
   <div class={utils.container}>
