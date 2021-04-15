@@ -6,7 +6,7 @@ const App = (state) => (
   <main>
     <Header />
     <Router {...state} />
-    <Footer />
+    <Footer {...state} />
   </main>
 )
 

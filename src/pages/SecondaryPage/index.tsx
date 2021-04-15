@@ -1,11 +1,9 @@
-import Link from '/src/utils/routing/Link'
-
 import utils from '/src/styles/utils.module.css'
 
 const SecondaryPage = () => (
   <div class={utils.container}>
     <h1>Hello from secondary page</h1>
-    <Link href="/">Go back to home page</Link>
+    <a href="/">Go back to home page</a>
   </div>
 )
 

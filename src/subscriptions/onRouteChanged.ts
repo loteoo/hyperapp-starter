@@ -1,6 +1,6 @@
-import fx from '/src/utils/fx'
+import { Subscription } from 'hyperapp'
 
-export const onRouteChanged = fx((dispatch, action) => {
+const onRouteChangedFx = (dispatch, action) => {
   const handleLocationChange = () => {
     dispatch([action, window.location.pathname + window.location.search])
   }
@@ -10,4 +10,11 @@ export const onRouteChanged = fx((dispatch, action) => {
     removeEventListener('pushstate', handleLocationChange)
     removeEventListener('popstate', handleLocationChange)
   }
-})
+}
+
+const onRouteChanged = (action): Subscription<any> => [
+  onRouteChangedFx,
+  action
+]
+
+export default onRouteChanged

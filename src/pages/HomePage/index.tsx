@@ -22,9 +22,6 @@ const HomePage = (state) => (
     <h2>
       {state.a} + {state.b} = {state.a + state.b}
     </h2>
-    <pre>
-      <code>{`state: ${JSON.stringify(state, null, 2)}`}</code>
-    </pre>
   </div>
 )
 

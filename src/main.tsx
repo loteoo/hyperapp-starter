@@ -1,7 +1,15 @@
 import { app } from 'hyperapp'
 
-// Middlewares
-import withLocation from './utils/routing/withLocation'
+// Actions
+import Navigate from '/src/actions/Navigate'
+import LocationChange from '/src/actions/LocationChange'
+
+// Subscriptions
+import onRouteChanged from '/src/subscriptions/onRouteChanged'
+import onLinkClicked from '/src/subscriptions/onLinkClicked'
+
+// Utils
+import parseUrl from '/src/utils/parseUrl'
 
 // Root view
 import App from '/src/components/core/App'
@@ -14,8 +22,16 @@ import { init as counterInit } from '/src/pages/CounterPage'
 import '/src/styles/base.module.css'
 
 // Initialize the app on the #app div
-withLocation(app)({
-  init: { ...homeInit, ...counterInit },
+app({
+  init: {
+    location: parseUrl(window.location.pathname + window.location.search),
+    ...homeInit,
+    ...counterInit,
+  },
   view: App,
-  node: document.getElementById('app')
+  subscriptions: (state) => [
+    onRouteChanged(LocationChange),
+    onLinkClicked(Navigate)
+  ],
+  node: document.getElementById('app'),
 })
