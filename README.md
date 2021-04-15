@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://github.com/jorgebucaran/hyperapp">
-    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-starter/master/src/assets/icon-180x180.png" width="80" />
+    <img alt="Hyperapp non-official logo" src="https://raw.githubusercontent.com/loteoo/hyperapp-starter/master/public/icon-180x180.png" width="80" />
   </a>
 </p>
 <h1 align="center">
   Hyperapp starter
 </h1>
 
-Starter template to quickly build front-ends using Hyperapp with a modern configuration and best-practices in mind.  
+Starter template to quickly build front-ends using Hyperapp  
 
 
 ## 🚀 Quick start: 
