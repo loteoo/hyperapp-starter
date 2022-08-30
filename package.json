@@ -15,6 +15,6 @@
   "devDependencies": {
     "hyperapp-jsx-pragma": "^1.3.0",
     "postcss-nested": "^4.2.3",
-    "vite": "^2.1.5"
+    "vite": "^2.9.13"
   }
 }
