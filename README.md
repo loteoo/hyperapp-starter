@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/jorgebucaran/hyperapp">
-    <img alt="Hyperapp starter logo" src="https://github.com/loteoo/hyperapp-starter/blob/master/public/logo.png" width="80" />
+    <img alt="Hyperapp starter logo" src="https://github.com/loteoo/hyperapp-starter/blob/main/public/logo.png" width="80" />
   </a>
 </p>
 <h1 align="center">
@@ -28,7 +28,7 @@ npm run build       # Build for production
 npm run preview     # Preview production build
 ```
 
-Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/master.zip)
+Or use a [.zip download](https://github.com/loteoo/hyperapp-starter/archive/main.zip)
 
 ## Features
 
