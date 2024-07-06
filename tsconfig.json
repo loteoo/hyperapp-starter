@@ -1,21 +1,32 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "/jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
     "baseUrl": ".",
     "paths": {
       "/*": ["./*"]
     },
-    "jsx": "preserve",
-    "checkJs": true,
-    "allowJs": true,
-    "noEmit": true
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
   },
-  "include": [
-    "index.d.ts",
-    "src/**/*"
-  ],
-  "exclude": ["node_modules", "public", ".cache", "dist"]
+  "include": ["src", "env.d.ts"]
 }

@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  max-width: min(32rem, 90vw);
+  margin: 0 auto;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Responsive Card grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+  margin: 1rem 0;
+}
